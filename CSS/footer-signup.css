@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    margin: 0;
+}
+
+.logged-out {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: linear-gradient(90deg, #af2896, #509bf5);
+}
+.page_bottom_left>p {
+    margin: 5px;
+    font-size: 14px;
+}
+.page_bottom_left>p:first-child {
+    font-weight: 400;
+}
+.page_bottom_left>p {
+    margin: 5px;
+    font-size: 14px;
+}
+.page_bottom_right>button {
+    padding: 15px 25px;
+    border-radius: 500px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+}
+.signup_btn, .login_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
