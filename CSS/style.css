@@ -24,11 +24,12 @@ body{
     background-color: rgb(233, 233, 233);
     position: fixed;
     height: 70px;
-    /* width: 900px; */
+    /* width: 1400px; */
     z-index: 3;
 }
 
 #Main-container{
+    /* position: fixed; */
     margin: 70px 0 0px 0px;
     padding: 10px;
     background-color: #26262f;
