@@ -15,8 +15,10 @@ function lets_do_resize() {
         function resize_mouse_move_Handler(e) {
             var dx = e.clientX - x;
             var cw = w + dx;
-            if (cw < 450 && cw > 200) {
+            if (cw < 400 && cw > 200) {
                 sidebar.style.width = `${cw}px`;
+                let width = screen.width;
+                document.getElementById("Nav-Bar-Container").style.width = `${width-cw-50}px`
                 document.getElementById("right_top_container").style.marginLeft = `${cw}px`
             }
         }

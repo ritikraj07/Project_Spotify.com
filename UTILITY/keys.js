@@ -1,7 +1,7 @@
 const getKeys = () => {
     return {
       CLIENT_ID: "5fae4890a7f244b29c841946eaba7a8d",
-      CLIENT_SECRET: "49afa59c62c645809a9f82a37fba5eca",
+      CLIENT_SECRET: "14f107d3bce74409ad68628047ca33dd",
     };
   };
       
