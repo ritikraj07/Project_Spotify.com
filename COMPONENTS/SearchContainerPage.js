@@ -6,7 +6,7 @@ function search_main_container(){
     <div id="body_container_for_search">
       <div
         id="0JQ5DArNBzkmxXHCqFLx2J"
-        style="background-color: rgb(131, 2, 231)"
+        class="block_div" style="background-color: rgb(131, 2, 231)"
       >
         <div>
           <img
@@ -18,7 +18,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DArNBzkmxXHCqFLx2J"
-        style="background-color: rgb(225, 51, 0)"
+        class="block_div" style="background-color: rgb(225, 51, 0)"
       >
         <div>
           <img
@@ -28,7 +28,7 @@ function search_main_container(){
           <span class="cat-title">Podcasts</span>
         </div>
       </div>
-      <div id="made-for-you" style="background-color: rgb(30, 50, 100)">
+      <div id="made-for-you" class="block_div" style="background-color: rgb(30, 50, 100)">
         <div>
           <img
             src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe"
@@ -37,7 +37,7 @@ function search_main_container(){
           <span class="cat-title">Made For You</span>
         </div>
       </div>
-      <div id="new-releases-page" style="background-color: rgb(232, 17, 91)">
+      <div id="new-releases-page" class="block_div" style="background-color: rgb(232, 17, 91)">
         <div>
           <img
             src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112"
@@ -48,7 +48,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFHCxg5H5PtqW"
-        style="background-color: rgb(233, 20, 41)"
+        class="block_div" style="background-color: rgb(233, 20, 41)"
       >
         <div>
           <img
@@ -60,7 +60,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFKSopHMaeIeI"
-        style="background-color: rgb(176, 40, 151)"
+        class="block_div" style="background-color: rgb(176, 40, 151)"
       >
         <div>
           <img
@@ -71,7 +71,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFE33XAyDiPIr"
-        style="background-color: rgb(165, 103, 82)"
+        class="block_div" style="background-color: rgb(165, 103, 82)"
       >
         <div>
           <img
@@ -83,7 +83,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFIdOwkMWR5at"
-        style="background-color: rgb(216, 64, 0)"
+        class="block_div" style="background-color: rgb(216, 64, 0)"
       >
         <div>
           <img
@@ -95,7 +95,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAudkNjCgYMM0TZXDr"
-        style="background-color: rgb(141, 103, 171)"
+        class="block_div" style="background-color: rgb(141, 103, 171)"
       >
         <div>
           <img
@@ -105,7 +105,7 @@ function search_main_container(){
           <span class="cat-title">Charts</span>
         </div>
       </div>
-      <div id="concerts" style="background-color: rgb(115, 88, 255)">
+      <div id="concerts" class="block_div" style="background-color: rgb(115, 88, 255)">
         <div>
           <img
             src="https://concerts.spotifycdn.com/images/live-events_category-image.jpg"
@@ -116,7 +116,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFEC4WFtoNRpw"
-        style="background-color: rgb(20, 138, 8)"
+        class="block_div" style="background-color: rgb(20, 138, 8)"
       >
         <div>
           <img
@@ -128,7 +128,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFCWjUTdzaG0e"
-        style="background-color: rgb(233, 20, 41)"
+        class="block_div" style="background-color: rgb(233, 20, 41)"
       >
         <div>
           <img
@@ -140,7 +140,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFQIL0AXnG5AK"
-        style="background-color: rgb(176, 40, 151)"
+        class="block_div" style="background-color: rgb(176, 40, 151)"
       >
         <div>
           <img
@@ -152,7 +152,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFAUsdyVjCQuL"
-        style="background-color: rgb(140, 25, 50)"
+        class="block_div" style="background-color: rgb(140, 25, 50)"
       >
         <div>
           <img
@@ -164,7 +164,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAtOnAEpjOgUKwXyxj"
-        style="background-color: rgb(141, 103, 171)"
+        class="block_div" style="background-color: rgb(141, 103, 171)"
       >
         <div>
           <img
@@ -176,7 +176,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFzHmL4tf05da"
-        style="background-color: rgb(225, 17, 140)"
+        class="block_div" style="background-color: rgb(225, 17, 140)"
       >
         <div>
           <img
@@ -188,7 +188,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFA6SOHvT3gck"
-        style="background-color: rgb(83, 122, 161)"
+        class="block_div" style="background-color: rgb(83, 122, 161)"
       >
         <div>
           <img
@@ -200,7 +200,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFOTGtSOysEXE"
-        style="background-color: rgb(195, 150, 135)"
+        class="block_div" style="background-color: rgb(195, 150, 135)"
       >
         <div>
           <img
@@ -212,7 +212,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFIVNxQgRNSg0"
-        style="background-color: rgb(186, 93, 7)"
+        class="block_div" style="background-color: rgb(186, 93, 7)"
       >
         <div>
           <img
@@ -224,7 +224,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFQ00XGBls6ym"
-        style="background-color: rgb(188, 89, 0)"
+        class="block_div" style="background-color: rgb(188, 89, 0)"
       >
         <div>
           <img
@@ -236,7 +236,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFHOzuVTgTizF"
-        style="background-color: rgb(216, 64, 0)"
+        class="block_div" style="background-color: rgb(216, 64, 0)"
       >
         <div>
           <img
@@ -248,7 +248,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFJw7QLnM27p6"
-        style="background-color: rgb(186, 93, 7)"
+        class="block_div" style="background-color: rgb(186, 93, 7)"
       >
         <div>
           <img
@@ -260,7 +260,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFFzDl7qN9Apr"
-        style="background-color: rgb(216, 64, 0)"
+        class="block_div" style="background-color: rgb(216, 64, 0)"
       >
         <div>
           <img
@@ -272,7 +272,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFCfObibaOZbv"
-        style="background-color: rgb(232, 17, 91)"
+        class="block_div" style="background-color: rgb(232, 17, 91)"
       >
         <div>
           <img
@@ -284,7 +284,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFGvOw3O4nLAf"
-        style="background-color: rgb(20, 138, 8)"
+        class="block_div" style="background-color: rgb(20, 138, 8)"
       >
         <div>
           <img
@@ -296,7 +296,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFAXlCG6QvYQ4"
-        style="background-color: rgb(119, 119, 119)"
+        class="block_div" style="background-color: rgb(119, 119, 119)"
       >
         <div>
           <img
@@ -308,7 +308,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFOOxftoKZxod"
-        style="background-color: rgb(119, 119, 119)"
+        class="block_div" style="background-color: rgb(119, 119, 119)"
       >
         <div>
           <img
@@ -320,7 +320,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFPw634sFwguI"
-        style="background-color: rgb(5, 105, 82)"
+        class="block_div" style="background-color: rgb(5, 105, 82)"
       >
         <div>
           <img
@@ -332,7 +332,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFImHYGo3eTSg"
-        style="background-color: rgb(255, 0, 144)"
+        class="block_div" style="background-color: rgb(255, 0, 144)"
       >
         <div>
           <img
@@ -344,7 +344,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFDXXwE9BDJAr"
-        style="background-color: rgb(233, 20, 41)"
+        class="block_div" style="background-color: rgb(233, 20, 41)"
       >
         <div>
           <img
@@ -356,7 +356,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFCuoRTxhYWow"
-        style="background-color: rgb(30, 50, 100)"
+        class="block_div" style="background-color: rgb(30, 50, 100)"
       >
         <div>
           <img
@@ -368,7 +368,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFAEu5QlAkwvV"
-        style="background-color: rgb(125, 75, 50)"
+        class="block_div" style="background-color: rgb(125, 75, 50)"
       >
         <div>
           <img
@@ -380,7 +380,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFRieVZLLoo9m"
-        style="background-color: rgb(83, 122, 161)"
+        class="block_div" style="background-color: rgb(83, 122, 161)"
       >
         <div>
           <img
@@ -392,7 +392,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFDBgllo2cUIN"
-        style="background-color: rgb(119, 119, 119)"
+        class="block_div" style="background-color: rgb(119, 119, 119)"
       >
         <div>
           <img
@@ -404,7 +404,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFx0uLQR2okcc"
-        style="background-color: rgb(81, 121, 161)"
+        class="block_div" style="background-color: rgb(81, 121, 161)"
       >
         <div>
           <img
@@ -416,7 +416,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFKLfwjuJMoNC"
-        style="background-color: rgb(216, 64, 0)"
+        class="block_div" style="background-color: rgb(216, 64, 0)"
       >
         <div>
           <img
@@ -428,7 +428,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFEZPnFQSFB1T"
-        style="background-color: rgb(220, 20, 140)"
+        class="block_div" style="background-color: rgb(220, 20, 140)"
       >
         <div>
           <img
@@ -440,7 +440,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFDkd668ypn6O"
-        style="background-color: rgb(233, 20, 41)"
+        class="block_div" style="background-color: rgb(233, 20, 41)"
       >
         <div>
           <img
@@ -452,7 +452,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFAJ5xb0fwo9m"
-        style="background-color: rgb(119, 119, 119)"
+        class="block_div" style="background-color: rgb(119, 119, 119)"
       >
         <div>
           <img
@@ -464,7 +464,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFPrEiAOxgac3"
-        style="background-color: rgb(125, 75, 50)"
+        class="block_div" style="background-color: rgb(125, 75, 50)"
       >
         <div>
           <img
@@ -476,7 +476,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFy78wprEpAjl"
-        style="background-color: rgb(188, 89, 0)"
+        class="block_div" style="background-color: rgb(188, 89, 0)"
       >
         <div>
           <img
@@ -488,7 +488,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFCbimwdOYlsl"
-        style="background-color: rgb(80, 55, 80)"
+        class="block_div" style="background-color: rgb(80, 55, 80)"
       >
         <div>
           <img
@@ -500,7 +500,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFIxnofjQmnmn"
-        style="background-color: rgb(13, 114, 234)"
+        class="block_div" style="background-color: rgb(13, 114, 234)"
       >
         <div>
           <img
@@ -512,7 +512,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFIpEuaCnimBj"
-        style="background-color: rgb(220, 20, 140)"
+        class="block_div" style="background-color: rgb(220, 20, 140)"
       >
         <div>
           <img
@@ -524,7 +524,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFFoimhOqWzLB"
-        style="background-color: rgb(141, 103, 171)"
+        class="block_div" style="background-color: rgb(141, 103, 171)"
       >
         <div>
           <img
@@ -536,7 +536,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFziKOShCi009"
-        style="background-color: rgb(228, 29, 99)"
+        class="block_div" style="background-color: rgb(228, 29, 99)"
       >
         <div>
           <img
@@ -548,7 +548,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFOzQeOmemkuw"
-        style="background-color: rgb(175, 40, 150)"
+        class="block_div" style="background-color: rgb(175, 40, 150)"
       >
         <div>
           <img
@@ -560,7 +560,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFAjfauKLOZiv"
-        style="background-color: rgb(30, 50, 100)"
+        class="block_div" style="background-color: rgb(30, 50, 100)"
       >
         <div>
           <img
@@ -572,7 +572,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFLjmiZRss79w"
-        style="background-color: rgb(71, 125, 149)"
+        class="block_div" style="background-color: rgb(71, 125, 149)"
       >
         <div>
           <img
@@ -584,7 +584,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFQiK2EHwyjcU"
-        style="background-color: rgb(176, 98, 57)"
+        class="block_div" style="background-color: rgb(176, 98, 57)"
       >
         <div>
           <img
@@ -596,7 +596,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFRY5ok2pxXJ0"
-        style="background-color: rgb(186, 93, 7)"
+        class="block_div" style="background-color: rgb(186, 93, 7)"
       >
         <div>
           <img
@@ -608,7 +608,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFFtlLYUHv8bT"
-        style="background-color: rgb(233, 20, 41)"
+        class="block_div" style="background-color: rgb(233, 20, 41)"
       >
         <div>
           <img
@@ -620,7 +620,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFLb2EqgLtpjC"
-        style="background-color: rgb(165, 103, 82)"
+        class="block_div" style="background-color: rgb(165, 103, 82)"
       >
         <div>
           <img
@@ -632,7 +632,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFAQy4HL4XU2D"
-        style="background-color: rgb(13, 114, 237)"
+        class="block_div" style="background-color: rgb(13, 114, 237)"
       >
         <div>
           <img
@@ -644,7 +644,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFObNLOHydSW8"
-        style="background-color: rgb(13, 115, 236)"
+        class="block_div" style="background-color: rgb(13, 115, 236)"
       >
         <div>
           <img
@@ -656,7 +656,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFNQ0fGp4byGU"
-        style="background-color: rgb(216, 64, 0)"
+        class="block_div" style="background-color: rgb(216, 64, 0)"
       >
         <div>
           <img
@@ -668,7 +668,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFSCjnQr8QZ3O"
-        style="background-color: rgb(140, 25, 50)"
+        class="block_div" style="background-color: rgb(140, 25, 50)"
       >
         <div>
           <img
@@ -680,7 +680,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFFsW9N8maB6z"
-        style="background-color: rgb(230, 30, 50)"
+        class="block_div" style="background-color: rgb(230, 30, 50)"
       >
         <div>
           <img
@@ -692,7 +692,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFLYQVFHcXMae"
-        style="background-color: rgb(20, 138, 8)"
+        class="block_div" style="background-color: rgb(20, 138, 8)"
       >
         <div>
           <img
@@ -704,7 +704,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFLVaM30PMBm4"
-        style="background-color: rgb(67, 130, 112)"
+        class="block_div" style="background-color: rgb(67, 130, 112)"
       >
         <div>
           <img
@@ -716,7 +716,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFEOEBCABAxo9"
-        style="background-color: rgb(235, 30, 50)"
+        class="block_div" style="background-color: rgb(235, 30, 50)"
       >
         <div>
           <img
@@ -728,7 +728,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFFgo8jQnAk7E"
-        style="background-color: rgb(245, 155, 35)"
+        class="block_div" style="background-color: rgb(245, 155, 35)"
       >
         <div>
           <img
@@ -740,7 +740,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFF1br7dZcRtK"
-        style="background-color: rgb(216, 64, 0)"
+        class="block_div" style="background-color: rgb(216, 64, 0)"
       >
         <div>
           <img
@@ -752,7 +752,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFRNXsIvgZF9A"
-        style="background-color: rgb(255, 70, 50)"
+        class="block_div" style="background-color: rgb(255, 70, 50)"
       >
         <div>
           <img
@@ -764,7 +764,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFxXaXKP7zcDp"
-        style="background-color: rgb(225, 17, 140)"
+        class="block_div" style="background-color: rgb(225, 17, 140)"
       >
         <div>
           <img
@@ -776,7 +776,7 @@ function search_main_container(){
       </div>
       <div
         id="0JQ5DAqbMKFS2wSdrLZlqZ"
-        style="background-color: rgb(176, 98, 57)"
+        class="block_div" style="background-color: rgb(176, 98, 57)"
       >
         <div>
           <img

@@ -13,9 +13,6 @@ import {
  
 let Main_container =  document.getElementById("Main-container")
 let Nav_Bar_Container =  document.getElementById("Nav-Bar-Container")
- 
- 
-// Nav_Bar_Container.innerHTML = search_page_navbar()
 // Main_container.innerHTML= search_main_container() 
  
 let width = screen.width;
@@ -40,6 +37,3 @@ if(token_timer === "0" || time!=token_timer || spotify_token == undefined || spo
   console.log("Your new generated token is this", spotify_token)
 }
 // end 
-
-
-
