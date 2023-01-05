@@ -19,6 +19,7 @@ async function getToken() {
   return data.access_token;
 }
 
+
 async function refreshToken() {
   let newToken = await getToken();
   console.log(newToken)
@@ -96,6 +97,7 @@ async function getCategoryPlaylists(category, offset, limit, TOKEN) {
     }
   );
   let data = await response.json();
+  // console.log(data);
   return data.playlists.items;
 }
 

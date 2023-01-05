@@ -1,6 +1,5 @@
-
 function lets_do_resize() {
-
+ 
     var resizer = document.querySelector(".resizer"),
         sidebar = document.querySelector(".sidebar");
     function Resizer_handler_dude(resizer, sidebar) {
@@ -30,6 +29,6 @@ function lets_do_resize() {
     }
     Resizer_handler_dude(resizer, sidebar);
 }
-
-
+ 
+ 
 export {lets_do_resize}
