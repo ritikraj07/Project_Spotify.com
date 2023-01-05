@@ -8,14 +8,15 @@ import {
     getCategoryPlaylists,
   } from "../UTILITY/api_call.js";
 
-
+  window.addEventListener('load', lets_do_resize)
   var token = localStorage.getItem("spotify_token")
   function get_song(song){
     getAllSearchResults(song, "track,artist", "50", token).then(function(res){
         let artist_items_ = res.artists.items
         let track_items_ = res.tracks.items
-        console.log(artist_items_)
-        console.log(track_items_)
+        // console.log(res)
+        // console.log(artist_items_)
+        console.log(track_items_) //working
       },function(e){
         console.log("you are getting following error", e)
       })
@@ -56,4 +57,23 @@ import {
 
   var micbtm = document.getElementById("mic_btm")
   micbtm.addEventListener('click', Mic_search)
-  window.addEventListener('load', lets_do_resize)
+  
+  let Main_container =  document.getElementById("Main-container")
+  
+
+
+
+
+
+
+
+
+
+
+
+//trial of block in mid container/ main container
+
+$(".block_div").click(function(){
+  // $(this).hide();
+  console.log(this.id)
+});
