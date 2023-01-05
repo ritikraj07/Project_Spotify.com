@@ -1,6 +1,6 @@
 import getKeys from "./keys.js";
 
-const keys = getKeys();
+const keys = getKeys();            // Taking keys 
 
 async function getToken() {
   const clientId = keys.CLIENT_ID;
@@ -35,8 +35,13 @@ async function getPlaylists(category, limit, TOKEN) {
     }
   );
   let data = await response.json();
+  console.log(data);
   return data.playlists.items;
+  
+  
 }
+
+// 
 
 async function getTrack(playlistID, TOKEN) {
   let res = await fetch(
