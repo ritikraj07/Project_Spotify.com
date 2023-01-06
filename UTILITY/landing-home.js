@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 
 import { getCategoryPlaylists } from "../UTILITY/api_call.js";
 let t = localStorage.getItem('spotify_token')
 
+=======
+// import { refreshToken } from "../UTILITY/api_call.js";
+let t = localStorage.getItem("spotify_token");
+import { getCategoryPlaylists } from "../UTILITY/api_call.js";
+
+console.log("vhfhjdj")
+>>>>>>> d84bf08168231b271d831703852e0855f23fdfde
 window.addEventListener("load", async function(){
     let gotData = await getCategoryPlaylists("sleep", "15", "6", t);
     var id = document.getElementById("f-show");

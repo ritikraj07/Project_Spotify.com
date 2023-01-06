@@ -14,9 +14,7 @@ import {
 let Main_container =  document.getElementById("Main-container")
 let Nav_Bar_Container =  document.getElementById("Nav-Bar-Container")
 
-Nav_Bar_Container.innerHTML = search_page_navbar()
-Main_container.innerHTML= search_main_container() 
-// Main_container.innerHTML =search_result_div()
+
 
 
 let width = screen.width;

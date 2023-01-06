@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player</title>
     <link rel="stylesheet" href="../CSS/player.css">
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico">
 </head>
 <body>
-    <div class="player">
+    <div class="player" id="player-box">
         <div class="left-player">
             <div class="player_image_container">
                 <img id="playing_img" src="https://t.scdn.co/images/8a0fabf4d537486e9b5a4623c921f77e.jpeg">
@@ -48,18 +49,24 @@
                     </path>
                   </svg>
                 </div>
-                <div id="bottom_play_button">
+                <div id="bottom_play_button" >
                   <!-- pause -->
-                  <!-- <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16">
-                    <path
-                      d="M2.7 1a.7.7 0 00-.7.7v12.6a.7.7 0 00.7.7h2.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7H2.7zm8 0a.7.7 0 00-.7.7v12.6a.7.7 0 00.7.7h2.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7h-2.6z">
-                    </path>
-                  </svg> -->
+                  <!-- <div class="masterPlay-pause pause">
+                    <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" id="masterPlay" class="pause">
+                      <path
+                        d="M2.7 1a.7.7 0 00-.7.7v12.6a.7.7 0 00.7.7h2.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7H2.7zm8 0a.7.7 0 00-.7.7v12.6a.7.7 0 00.7.7h2.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7h-2.6z">
+                      </path>
+                    </svg>
+                  </div> -->
                   <!-- play -->
-                  <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16">
+                 <!-- <div class="masterPlay-play">
+                  <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" id="masterPlay" class="play">
                     <path d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z">
                     </path>
                   </svg>
+                 </div> -->
+                 <i class="fas fa-3x fa-play-circle" id="masterPlay"></i>
+                 
                 </div>
                 <div id="next_button">
                   <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16">
@@ -79,10 +86,10 @@
                   <span id="curr_song_time">0:00</span>
                 </div>
                 <div class="progress_container">
-                  <div class="progress_bar" id="progress_bar"></div>
+                  <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0">
                 </div>
                 <div class="end_time">
-                  <span>0:30</span>
+                  <span>5:30</span>
                 </div>
             </div>
         </div>
@@ -108,12 +115,13 @@
                 </svg>
             </div>
             <div class="slider-container">
-                <div class="slider">
-                    <input type="range" min="0" max="0" value="50">
-                    <progress value="0" max="100" value="50"></progress>
-                </div>
+              <!-- <input type="range" min="0" max="100" value="1" id="range" class="slider"> -->
+              <progress min="0" max="100" value="50"></progress>
             </div>
         </div>
     </div>
+    <!-- <a href="/songs/01-slipknot-duality_(edit).mp3"></a> -->
 </body>
 </html>
+<script src="../JS/player.js" type="module"></script>
+<script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
