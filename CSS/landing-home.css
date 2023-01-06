@@ -2,36 +2,37 @@
 * {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 #landing-home {
-    border: 2px solid white;
+    margin: -1%;
+    border: 0px solid white;
     /* margin: 0; */
-    width: 100%;
-    background-color: rgb(27, 27, 27);
+    width: 101.5%;
+    /* background-color: rgb(27, 27, 27); */
     padding-bottom: 10%;
+    background-image: linear-gradient(#231f1fee, #1e1e1e);
 }
 
 #focus {
-    border: 2px solid yellow;
-    margin: 2% 3% 2% 3%;
+    border: 0px solid yellow;
+    margin: -2% 3% 2% 1%;
 }
 
 #playlist {
-    border: 2px solid rgb(181, 13, 13);
-    margin: 2% 3% 2% 3%;
+    border: 0px solid rgb(181, 13, 13);
+    margin: 0% 3% 2% 1%;
     
 }
 
 #mood {
-    border: 2px solid green;
-    margin: 2% 3% 2% 3%;
+    border: 0px solid green;
+    margin: -2% 3% 2% 1%;
 }
 
 #bollywood {
-    border: 2px solid skyblue;
-    margin: 2% 3% 2% 3%;
+    border: 0px solid skyblue;
+    margin: -2% 3% 2% 1%;
     /* padding-inline-start: 2%; */
 }
 
@@ -78,9 +79,10 @@
 
 /* js starts here */
 #ccdiv {
-    border: 2px solid white;
-    height: 280px;
+    border: 0px solid white;
+    height: 260px;
     background-color: #161616d0;
+    padding-bottom: -15px;
 
 
 }
@@ -97,25 +99,29 @@
 }
 
 .lptitle {
-    border: 1px solid red;
-    height: 65px;
+    border: 0px solid red;
+    height: 38px;
     margin-top: -15px;
     margin-bottom: -10px;
-
+    padding-left: 5px;
 }
 
 .des {
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid skyblue;
-    height: 55px;
+    border: 0px solid skyblue;
+    padding-top: -20px;
+    font-size: medium;
+    padding-left: 3px;
+    height: 54px;
+    font-weight: 900;
 }
 
 .btn {
     height: 50px;
     width: 50px;
-    border: 2px solid yellow;
+    border: 0px solid yellow;
     margin-left: 60%;
     position: relative;
     margin-top: -103%;
@@ -125,7 +131,7 @@
 
     height: 100%;
     width: 100%;
-    border: 2px solid yellow;
+    border: 0px solid yellow;
     border-radius: 50%;
     position: absolute;
     left: 0px;
@@ -139,11 +145,17 @@
     bottom: 0px;
     opacity: 1;
     cursor: pointer;
+    
 
 }
 
 #ccdiv:hover {
-    box-shadow: rgba(141, 136, 136, 0.25) 0px 54px 55px, rgba(133, 127, 127, 0.12) 0px -12px 30px, rgba(131, 124, 124, 0.12) 0px 4px 6px, rgba(78, 75, 75, 0.17) 0px 12px 13px, rgba(73, 70, 70, 0.09) 0px -3px 5px;
+    box-shadow: rgba(48, 45, 45, 0.25) 0px 54px 55px,
+     rgba(48, 45, 45, 0.12) 0px -12px 30px, 
+    rgba(59, 56, 56, 0.12) 0px 4px 6px,
+     rgba(69, 65, 65, 0.17) 0px 12px 13px,
+      rgba(51, 48, 48, 0.09) 0px -3px 5px;
+      /* background-color: rgb(37, 37, 37); */
 }
 
 #show-login-page {
@@ -174,7 +186,7 @@
     width: 300px;
     height: 300px;
     margin-left: 25%;
-    border: 2px solid yellow;
+    border: 0px solid yellow;
 }
 
 #notify {
@@ -239,14 +251,14 @@
     background-color: rgb(15,15,15);
     color: #fff;
     display: grid;
-    width: 100%;
+    width: 103%;
     height: 70px;
     
     grid-template-columns: repeat(6, 1fr);
     
 }
 #b-navbar button{
-    border: 2px solid orange;
+    border: 0px solid orange;
     background-color: rgb(15,15,15);
     width: 30%;
     cursor: pointer;
