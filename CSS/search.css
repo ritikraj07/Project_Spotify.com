@@ -44,20 +44,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
       #search_navbar{
           display: flex;
           justify-content: space-between;
           align-items: center;
-          background-color: #121212 ;
+          /* background-color: #121212 ; */
           width: 100%;
           height: inherit;
           padding: 0 30px;
@@ -71,13 +62,14 @@
           margin: 2px;
       }
       .page_change_btm{
-          color: white;
-          background-color:#050505 ;
+          /* color: white; */
+          /* background-color:#050505 ; */
           width: 40px;
           height: 40px;
           border-radius: 80%;
           cursor: pointer;
-          border: none;
+          border: 1px solid rgb(57, 55, 55);
+
       }
       #search_input_div{
           border: 2px solid rgb(0, 0, 0);

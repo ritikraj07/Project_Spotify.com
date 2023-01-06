@@ -12,12 +12,13 @@ import {
   window.addEventListener('load', lets_do_resize)
   var token = localStorage.getItem("spotify_token")
   function get_song(song){
+    search_input_itme_song.value = song
     getAllSearchResults(song, "track,artist", "50", token).then(function(res){
         let artist_items_ = res.artists.items
         let track_items_ = res.tracks.items
         // console.log(res)
         // console.log(artist_items_)
-       // console.log(track_items_) //working
+       console.log(track_items_) //working
         document.getElementById("Main-container").innerHTML = ""
         document.getElementById("Main-container").innerHTML= search_result_div(track_items_)
 
