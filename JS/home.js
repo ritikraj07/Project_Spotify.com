@@ -10,6 +10,19 @@ const row_four = document.querySelector('#playlist_four');
 
 var spotify_token = localStorage.getItem("spotify_token")
 let token_timer = localStorage.getItem('token_timer',"time")||0
+const today = new Date();
+let time = today.toTimeString()[0]+today.toTimeString()[1]
+ 
+setInterval(function(){
+  time = today.toTimeString()[0]+today.toTimeString()[1];
+},3000)
+ 
+if(token_timer === "0" || time!=token_timer || spotify_token == undefined || spotify_token == null){
+  localStorage.setItem('token_timer', time)
+  localStorage.removeItem("spotify_token");
+  refreshToken()
+  console.log("Your new generated token is this", spotify_token)
+}
   console.log(spotify_token)
 
   const displayPlaylist = (data, parent) => {
