@@ -92,7 +92,7 @@ async function getalbumdata() {
 
 async function getdata() {
     let id = "37i9dQZF1DWVDCraF986xg";
-    localStorage.setItem("playList-Id" , id);
+    localStorage.setItem("playList-Id", id);
 
     // let id = localStorage.getItem("playList-Id");
     var trackdata = await getTrack(id, spotify_token);
@@ -108,8 +108,8 @@ async function getdata() {
 main();
 
 async function main() {
-   getdata();
-  
+    getdata();
+
 }
 
 
@@ -125,10 +125,10 @@ function StoreLocal() {
 
 // <<<<<<<<<<<<<<<<<<<<<<<Play List main static body >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
+let Songs_Data2 ;
 
 async function playlistMainBody(Songs_Data) {
-
+    Songs_Data2 = Songs_Data;
     document.querySelector("#pl_main_div").textContent = "";
 
     var ODiv = document.createElement("div");
@@ -290,17 +290,20 @@ async function playlistMainBody(Songs_Data) {
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>inilisizing play pause Buttons <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-let oldPlay ;
+let oldPlay = new Audio('https://p.scdn.co/mp3-preview/324d859b5937620579493eb1b41fbb56f06fd130?cid=5fae4890a7f244b29c841946eaba7a8d');
+let oldindex = 0;
 
 let playingIndex;
-let audioElement ;
+let audioElement;
 
 function showSongs(sdata) {
     let counteran = 1;
     let stldiv = document.createElement("div");
     // console.log(sdata)
     stldiv.textContent = "";
-    oldPlay = new Audio(sdata[0].track.preview_url) ;
+    oldPlay = new Audio(sdata[0].track.preview_url);
+    oldindex = 0;
+    ChangeSongName (sdata[0]);
     sdata.map(function (elem, index) {
 
         let ParDiv = document.createElement("div");
@@ -319,15 +322,34 @@ function showSongs(sdata) {
         let audioElement = new Audio(elem.track.preview_url);
 
         div1.addEventListener("click", function () {
-            
-            localStorage.setItem("box-song",JSON.stringify(elem));
+
+            localStorage.setItem("box-song", JSON.stringify(elem));
+
 
             if (audioElement.paused || audioElement.currentTime <= 0) {
                 if (oldPlay != undefined && !oldPlay.paused) {
                     oldPlay.pause()
+                    oldindex = index;
                 }
                 audioElement.play();
                 oldPlay = audioElement;
+                oldindex = index;
+
+                ChangeSongName (elem);
+
+                oldPlay.addEventListener('timeupdate', () => {
+                    // console.log('timeupdate');
+                    //update seekbar 
+
+                    let progress = parseInt((oldPlay.currentTime / oldPlay.duration) * 100);
+                    //    console.log(progress);
+                    myProgressBar.value = progress;
+
+                    if( progress >= 100 ){
+                        console.log("aman")
+                        nextSong();
+                    }
+                })
 
                 let playicon = document.createElement("img");
                 playicon.src = "./../IMAGES/AmanImages/playing.gif"
@@ -474,23 +496,188 @@ function showSongs(sdata) {
 }
 
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Play Pause Controller >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-masterPlay.addEventListener("click", SongController  ) 
+let masterPlay = document.getElementById("masterPlay");
+let myProgressBar = document.getElementById("myProgressBar");
+
+masterPlay.addEventListener("click", SongController)
 
 function SongController() {
+
     
-  if( oldPlay != undefined && oldPlay.paused || oldPlay.currentTime <=0){
-   
-    oldPlay.play();
-    masterPlay.classList.remove('fa-play-circle');
-    masterPlay.classList.add('fa-pause-circle');
-  }
-  else{
-    oldPlay.pause();
-    masterPlay.classList.add('fa-play-circle');
-    masterPlay.classList.remove('fa-pause-circle');
-  }
+
+    if (oldPlay != undefined && oldPlay.paused || oldPlay.currentTime <= 0) {
+
+        oldPlay.play();
+        masterPlay.classList.remove('fa-play-circle');
+        masterPlay.classList.add('fa-pause-circle');
+
+
+        oldPlay.addEventListener('timeupdate', () => {
+            // console.log('timeupdate');
+            //update seekbar 
+
+            let progress = parseInt((oldPlay.currentTime / oldPlay.duration) * 100);
+            // console.log(progress);
+            myProgressBar.value = progress;
+            document.querySelector("#curr_song_time").textContent = oldPlay.currentTime.toFixed(0) ;
+            if( progress >= 100 ){
+                console.log("aman")
+                nextSong();
+            }
+        })
+    }
+    else {
+        oldPlay.pause();
+
+        masterPlay.classList.add('fa-play-circle');
+        masterPlay.classList.remove('fa-pause-circle');
+    }
 }
 
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Play Pause time update Controller >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+// oldPlay.addEventListener('timeupdate', () => {
+//     console.log('timeupdate');
+//     //update seekbar 
+
+
+//     progress = parseInt((oldPlay.currentTime / oldPlay.duration) * 100);
+//     console.log(progress);
+//     myProgressBar.value = progress;
+// })
+
+myProgressBar.addEventListener('change', () => {
+    // console.log("change the song value")
+    oldPlay.currentTime = myProgressBar.value * oldPlay.duration / 100;
+})
+
+
+
+
+document.getElementById("shuffle_btn").addEventListener("click", () => {
+    shuffleSong();
+})
+let shuffleSong = () => {
+    // console.log(Songs_Data2[oldindex].track.preview_url);
+    // console.log(Songs_Data2.length);
+    let x = Math.floor((Math.random() * ( Songs_Data2.length - 1 )) + 1);
+    oldindex = x ;
+    console.log("Random Index" , x);
+    if (oldindex <= 0) {
+        oldindex = Songs_Data2.length - 1;
+    }
+    // oldPlay = Songs_Data2[oldindex];
+    oldPlay.src = Songs_Data2[oldindex].track.preview_url;
+    oldPlay.play();
+    // console.log(oldindex)
+
+    ChangeSongName (Songs_Data2[oldindex]);
+
+    oldPlay.addEventListener('timeupdate', () => {
+        // console.log('timeupdate');
+        //update seekbar 
+
+        let progress = parseInt((oldPlay.currentTime / oldPlay.duration) * 100);
+        // console.log(progress);
+        myProgressBar.value = progress;
+        document.querySelector("#curr_song_time").textContent = oldPlay.currentTime.toFixed(0) ;
+        if( progress >= 100 ){
+            console.log("aman")
+            nextSong();
+        }
+    })
+
+
+
+   
+}
+
+
+
+document.getElementById("previous_button").addEventListener("click", () => {
+    previousSong();
+})
+let previousSong = () => {
+    // console.log(Songs_Data2[oldindex].track.preview_url);
+    // console.log(Songs_Data2.length);
+    oldindex--;
+    if (oldindex <= 0) {
+        oldindex = Songs_Data2.length - 1;
+    }
+    // oldPlay = Songs_Data2[oldindex];
+    oldPlay.src = Songs_Data2[oldindex].track.preview_url;
+    oldPlay.play();
+    // console.log(oldindex)
+
+    ChangeSongName (Songs_Data2[oldindex]);
+
+    oldPlay.addEventListener('timeupdate', () => {
+        // console.log('timeupdate');
+        //update seekbar 
+
+        let progress = parseInt((oldPlay.currentTime / oldPlay.duration) * 100);
+        // console.log(progress);
+        myProgressBar.value = progress;
+        document.querySelector("#curr_song_time").textContent = oldPlay.currentTime.toFixed(0) ;
+        if( progress >= 100 ){
+            console.log("aman")
+            nextSong();
+        }
+    })
+
+   
+}
+
+
+
+
+document.getElementById("next_button").addEventListener("click", ()=> {
+   nextSong();
+})
+let nextSong = () => {
+    // console.log(Songs_Data2[oldindex].track.preview_url);
+    // console.log(Songs_Data2.length);
+    oldindex++;
+    if (oldindex >= Songs_Data2.length ) {
+        oldindex = 0;
+    }
+    // oldPlay = Songs_Data2[oldindex];
+    oldPlay.src = Songs_Data2[oldindex].track.preview_url;
+    oldPlay.play();
+    // console.log(oldindex)
+
+    ChangeSongName (Songs_Data2[oldindex]);
+
+    oldPlay.addEventListener('timeupdate', () => {
+        // console.log('timeupdate');
+        //update seekbar 
+
+        let progress = parseInt((oldPlay.currentTime / oldPlay.duration) * 100);
+        // console.log(progress);
+        myProgressBar.value = progress;
+        document.querySelector("#curr_song_time").textContent = oldPlay.currentTime.toFixed(0) ;
+        if( progress >= 100 ){
+            console.log("aman")
+            nextSong();
+        }
+    })
+    
+
+}
+
+function ChangeSongName (elem) {
+
+    let imaggeUrl = document.querySelector("#playing_img")
+    imaggeUrl.src = elem.track.album.images[0].url ;
+    let SongName1 = document.querySelector("#player_song_name")
+    SongName1.textContent = elem.track.name;
+    let ArtistName1 = document.querySelector("#player_artist_name")
+    ArtistName1.textContent = elem.track.album.artists[0].name ;
+
+}
 
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< showing Liked Songs Play List with top play button  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -498,11 +685,11 @@ function SongController() {
 
 function showLikedPlayList() {
     // console.log(likedSongs)
-    location.reload();
+    // location.reload();
     localStorage.setItem("PlayList-Name", "Liked Songs");
     localStorage.setItem("playList-Description", "Your Favourite Songs are Here ! ");
 
     playlistMainBody(likedSongs)
 
 }
-export {getdata,showSongs}
+export { getdata, showSongs }
