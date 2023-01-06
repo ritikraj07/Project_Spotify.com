@@ -25,6 +25,8 @@ async function refreshToken() {
   console.log(newToken)
   localStorage.setItem("spotify_token", newToken);
 }
+
+
 async function getPlaylists(category, limit, TOKEN) {
   let response = await fetch(
     `https://api.spotify.com/v1/browse/categories/${category}/playlists?country=IN&offset=5&limit=${limit}`,
