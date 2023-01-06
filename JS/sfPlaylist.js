@@ -108,7 +108,8 @@ async function getdata() {
 main();
 
 async function main() {
-    getdata();
+   getdata();
+  
 }
 
 
@@ -290,14 +291,16 @@ async function playlistMainBody(Songs_Data) {
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>inilisizing play pause Buttons <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 let oldPlay ;
-let currSong ;
+
 let playingIndex;
 let audioElement ;
+
 function showSongs(sdata) {
     let counteran = 1;
     let stldiv = document.createElement("div");
     // console.log(sdata)
     stldiv.textContent = "";
+    oldPlay = new Audio(sdata[0].track.preview_url) ;
     sdata.map(function (elem, index) {
 
         let ParDiv = document.createElement("div");
@@ -495,7 +498,7 @@ function SongController() {
 
 function showLikedPlayList() {
     // console.log(likedSongs)
-
+    location.reload();
     localStorage.setItem("PlayList-Name", "Liked Songs");
     localStorage.setItem("playList-Description", "Your Favourite Songs are Here ! ");
 
