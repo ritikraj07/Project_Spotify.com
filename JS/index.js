@@ -1,5 +1,5 @@
 import { lets_do_resize } from "../COMPONENTS/com.js";
-import {search_main_container, search_page_navbar} from "../COMPONENTS/SearchContainerPage.js";
+import {search_main_container, search_page_navbar, search_result_div} from "../COMPONENTS/SearchContainerPage.js";
 import {
     refreshToken,
     getPlaylists,
@@ -13,11 +13,9 @@ import {
  
 let Main_container =  document.getElementById("Main-container")
 let Nav_Bar_Container =  document.getElementById("Nav-Bar-Container")
- 
- 
-Nav_Bar_Container.innerHTML = search_page_navbar()
-// Main_container.innerHTML= search_main_container() 
- 
+
+
+
 let width = screen.width;
 document.getElementById("Nav-Bar-Container").style.width = `${width-350}px`
 lets_do_resize()
@@ -38,4 +36,4 @@ if(token_timer === "0" || time!=token_timer || spotify_token == undefined || spo
   refreshToken()
   console.log("Your new generated token is this", spotify_token)
 }
-// end
+
