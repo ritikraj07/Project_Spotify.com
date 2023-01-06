@@ -10,6 +10,10 @@ import {
     getCategoryPlaylists,
 } from "./../UTILITY/api_call.js";
 
+// let footer = player_box();
+// console.log(footer);
+// document.querySelector("#footer-box").innerHTML = footer;
+
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>> For Storing liked Data to local Storage <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -87,10 +91,10 @@ async function getalbumdata() {
 
 
 async function getdata() {
-    // id = "37i9dQZF1DWVDCraF986xg";
-    // localStorage.setItem("playList-Id" , id);
+    let id = "37i9dQZF1DWVDCraF986xg";
+    localStorage.setItem("playList-Id" , id);
 
-    let id = localStorage.getItem("playList-Id");
+    // let id = localStorage.getItem("playList-Id");
     var trackdata = await getTrack(id, spotify_token);
 
     console.log(trackdata.items);
@@ -311,7 +315,8 @@ function showSongs(sdata) {
         let audioElement = new Audio(elem.track.preview_url);
 
         div1.addEventListener("click", function () {
-            console.log("aman")
+            console.log(elem);
+            localStorage.setItem("box-song",JSON.stringify(elem));
 
             if (audioElement.paused || audioElement.currentTime <= 0) {
                 if (oldPlay != undefined && !oldPlay.paused) {
@@ -477,3 +482,4 @@ function showLikedPlayList() {
     playlistMainBody(likedSongs)
 
 }
+export {getdata,showSongs}
