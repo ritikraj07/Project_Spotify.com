@@ -810,4 +810,181 @@ function search_page_navbar(){
 </div>`
 }
 
-export {search_main_container, search_page_navbar}
+function calculate_time(time){
+  let min = time/60000
+  let sec = Math.floor(Math.random() * 59);
+  min = Math.floor(min)
+  return (min +":"+sec)
+}
+
+function song_name(data){
+  let name =  data.split(" ")
+  
+  let sname =''
+  for(var i = 0; i<name.length && i<4; i++){
+    sname += name[i]+" "
+  }
+  if(name.length>3){
+    return sname +"..."
+  }
+  
+  return sname;
+}
+
+
+
+function get_singer_name(data){
+  let sin = ""
+  for(var i = 0; i<data.length; i++){
+    sin += data[i].name+" ";
+  }
+  return sin;
+}
+
+
+
+function search_result_div(data){
+
+  let sing1 = get_singer_name(data[0].album.artists)
+  let sing2 = get_singer_name(data[1].album.artists)
+  let sing3 = get_singer_name(data[2].album.artists)
+  let sing4 = get_singer_name(data[3].album.artists)
+
+  let song1 = song_name(data[0].name);
+  let song2 = song_name(data[1].name);
+  let song3 = song_name(data[2].name);
+  let song4 = song_name(data[3].name);
+
+  let time1 = calculate_time(data[0].duration_ms)
+  let time2 = calculate_time(data[0].duration_ms)
+  let time3 = calculate_time(data[0].duration_ms)
+  let time4 = calculate_time(data[0].duration_ms)
+  
+
+  return `<div id="search_result">
+  <div id="top_result">
+      <div id="top_result_song">
+          <p class="result_title">Top result</p>
+          <div>
+              <img src="${data[0].album.images[0].url}" alt="">
+              <h2 id="result_song_name">${song1}</h2>
+              <p class="result_song_dec">${sing1}<span id="song_in_top_f_div">SONG</span> </p>
+              <button id="play_btm_in_top_result"><i class="fa-sharp fa-solid fa-play"></i></i></button>
+          </div>
+      </div>
+      <div id="result_song">
+          <p class="result_title">Songs</p>
+          <div id="PlayHideShowa">
+              <div class="backgroundimgchange a"><button><i class="fa-sharp fa-solid fa-play PlayHideShow a"></i> <img src="${data[0].album.images[0].url}" alt=""></button></div>
+              <div>
+                  <h3>${song1}</h3>
+                  <p class="fad_color">${sing1}</p>
+              </div>
+              <div>
+                  <p class="fad_color"> <i class="fa-regular fa-heart PlayHideShow a"></i>  ${time1} <i class="fa-solid fa-ellipsis PlayHideShow a"></i></p>
+              </div>
+          </div>
+
+          <div id="PlayHideShowb">
+              <div class="backgroundimgchange"><button><i class="fa-sharp fa-solid fa-play PlayHideShow b"></i> <img src="${data[1].album.images[0].url}" alt=""></button></div>
+              <div>
+                  <h3>${song2}</h3>
+                  <p class="fad_color">${sing2}</p>
+              </div>
+              <div>
+                  <p class="fad_color"> <i class="fa-regular fa-heart PlayHideShow b"></i>  ${time2} <i class="fa-solid fa-ellipsis PlayHideShow b"></i></p>
+              </div>
+          </div>
+
+          <div id="PlayHideShowc">
+              <div class="backgroundimgchange"><button><i class="fa-sharp fa-solid fa-play PlayHideShow c"></i> <img src="${data[2].album.images[0].url}" alt=""></button></div>
+              <div>
+                  <h3>${song3}</h3>
+                  <p class="fad_color">${sing3}</p>
+              </div>
+              <div>
+                  <p class="fad_color"> <i class="fa-regular fa-heart PlayHideShow c"></i>  ${time3} <i class="fa-solid fa-ellipsis PlayHideShow c"></i></p>
+              </div>
+          </div>
+          <div id="PlayHideShowd">
+              <div class="backgroundimgchange"><button><i class="fa-sharp fa-solid fa-play PlayHideShow d"></i> <img src="${data[3].album.images[0].url}" alt=""></button></div>
+              <div>
+                  <h3>${song4}</h3>
+                  <p class="fad_color">${sing4}</p>
+              </div>
+              <div>
+                  <p class="fad_color"> <i class="fa-regular fa-heart PlayHideShow d"></i>  ${time4} <i class="fa-solid fa-ellipsis PlayHideShow d"></i></p>
+              </div>
+          </div>
+
+          
+          
+          
+
+          
+      </div>
+  </div>
+  <div id="result_Artists">
+      <p class="result_title">Artists</p>
+      <div>
+      <div>
+          <img src="https://i.scdn.co/image/ab6761610000f1781156ccf1c660c0d4dcf90a27" alt="">
+          <p>Kherari Lal yadav</p>
+          <p>Artists</p>
+      </div>
+      <div>
+          <img src="https://i.scdn.co/image/ab67616d0000b273834780f7b18d0c5a82fa14a7" alt="">
+          <p>Sha Muzic</p>
+          <p>Artists</p>
+      </div>
+      <div>
+          <img src="https://i.scdn.co/image/ab6761610000f178cb6926f44f620555ba444fca" alt="">
+          <p>Pritam</p>
+          <p>Artists</p>
+      </div>
+      <div>
+          <img src="https://i.scdn.co/image/ab6761610000f1781f7aa3c21e61c132a1e82fa2" alt="">
+          <p>WORMONO</p>
+          <p>Artists</p>
+      </div>
+  </div>
+      
+  </div>
+  <div id="result_albums">
+      <p class="result_title">Albums</p>
+      <div>
+      <div>
+          <img src="https://c.saavncdn.com/191/Kesariya-From-Brahmastra-Hindi-2022-20220717092820-500x500.jpg" alt="">
+          <p>Kesariya (Dance Mix)</p>
+          <p>2022. Shashwat Shing,  Antara Mitra, Arijit Singh
+          </p>
+      </div>
+      <div>
+          <img src="https://i.ytimg.com/vi/1qeujW9f4So/maxresdefault.jpg" alt="">
+          <p>${data[0].name}</p>
+          <p>2022. Pritam, Arijit Singh,  Amitabh Bhattacharaya</p>
+      </div>
+      <div>
+          <img src="https://i.ytimg.com/vi/r6c9ALhgzH4/maxresdefault.jpg" alt="">
+          <p>Kesari (Original)</p>
+          <p>2019.Various Artists</p>
+      </div>
+      <div>
+          <img src="https://images.hindustantimes.com/img/2022/10/01/1600x900/Kesariya_Dance_Mix_1664622744904_1664622745026_1664622745026.png" alt="">
+          <p>Kesariya Audio Teaser</p>
+          <p>2022. Pritam, Arijit Singh Amitabh</p>
+      </div>
+  </div>
+  </div>
+  <div id="result_playlists"></div>
+  <div id="result_podcasts"></div>
+  <div id="result_episodes"></div>
+  <div id="result_profiles"></div>
+</div>`
+}
+
+
+
+
+
+export {search_main_container, search_page_navbar, search_result_div}

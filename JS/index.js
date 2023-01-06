@@ -1,5 +1,5 @@
 import { lets_do_resize } from "../COMPONENTS/com.js";
-import {search_main_container, search_page_navbar} from "../COMPONENTS/SearchContainerPage.js";
+import {search_main_container, search_page_navbar, search_result_div} from "../COMPONENTS/SearchContainerPage.js";
 import {
     refreshToken,
     getPlaylists,
@@ -13,10 +13,13 @@ import {
  
 let Main_container =  document.getElementById("Main-container")
 let Nav_Bar_Container =  document.getElementById("Nav-Bar-Container")
-// Main_container.innerHTML= search_main_container() 
- 
+
+Nav_Bar_Container.innerHTML = search_page_navbar()
+Main_container.innerHTML= search_main_container() 
+// Main_container.innerHTML =search_result_div()
+
+
 let width = screen.width;
-console.log("width", width);
 document.getElementById("Nav-Bar-Container").style.width = `${width-350}px`
 lets_do_resize()
  

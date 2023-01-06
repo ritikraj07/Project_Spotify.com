@@ -25,14 +25,14 @@ body{
     position: fixed;
     height: 70px;
     /* width: 1400px; */
-    z-index: 3;
+    z-index: 10;
 }
 
 #Main-container{
     /* position: fixed; */
     margin: 70px 0 0px 0px;
     padding: 10px;
-    background-color: #26262f;
+    background-color: #121212;
 }
 #Footer-Container{
     background-color: rgb(40, 40, 37);
@@ -40,6 +40,7 @@ body{
     bottom: 0;
     height: 80px;
     width: 100%;
+    z-index: 10;
 }
 .sidebar {
     width: 333px;
