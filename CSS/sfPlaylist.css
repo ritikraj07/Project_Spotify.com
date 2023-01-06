@@ -393,3 +393,12 @@ main {
 
 }
 
+#footer-box{
+    position: sticky;
+    z-index: 2;
+    bottom: 0;
+    background-color: #000000;
+}
+#dummy-space{
+    height: 20px;
+}
