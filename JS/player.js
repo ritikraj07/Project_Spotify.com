@@ -17,11 +17,18 @@ let myProgressBar = document.getElementById("myProgressBar");
 // // console.log(player_box());
 // export {player_box};
 
+
+// console.log(currSong);
+
+//handle play/pause
+
+
+
 // let currSong = JSON.parse(localStorage.getItem("box-song"));
 // console.log(currSong);
 // let audioElement = new Audio(currSong.track.preview_url);
 // //handle play/pause
-// masterPlay.addEventListener("click", ()=>{
+// masterPlay.addEventListener("click",  ()=>{
 //   if(audioElement.paused || audioElement.currentTime <=0){
 //     audioElement.play();
 //     masterPlay.classList.remove('fa-play-circle');
