@@ -8,7 +8,7 @@ import {
     getAlbumTrack,
     getCategoryPlaylists,
   } from "../UTILITY/api_call.js";
-lets_do_resize()
+// lets_do_resize()
  
  
 let Main_container =  document.getElementById("Main-container")
@@ -20,7 +20,7 @@ Nav_Bar_Container.innerHTML = search_page_navbar()
  
 let width = screen.width;
 document.getElementById("Nav-Bar-Container").style.width = `${width-350}px`
- 
+lets_do_resize()
  
 // function for auto change token
 var spotify_token = localStorage.getItem("spotify_token")

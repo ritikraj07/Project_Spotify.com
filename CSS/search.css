@@ -1,0 +1,196 @@
+
+      #body_container_for_search {
+        /* background-color: antiquewhite; */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+      #body_container_for_search > div {
+        /* background-color: aqua; */
+        width: 100%;
+        height: 223px;
+        border: none;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+      }
+
+      #body_container_for_search > div img {
+        display: block;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        transform: rotate(25deg) translate(18%, -2%);
+        right: 0;
+        bottom: 0;
+      }
+      .cat-title {
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        margin-block: 0px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        padding: 16px;
+        position: absolute;
+        object-fit: cover;
+        object-position: center center;
+        font-size: x-larger;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      #search_navbar{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #121212 ;
+          width: 100%;
+          height: inherit;
+          padding: 0 30px;
+          
+      }
+      #search_navbar>div:first-child{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 55%;
+          margin: 2px;
+      }
+      .page_change_btm{
+          color: white;
+          background-color:#050505 ;
+          width: 40px;
+          height: 40px;
+          border-radius: 80%;
+          cursor: pointer;
+          border: none;
+      }
+      #search_input_div{
+          border: 2px solid rgb(0, 0, 0);
+          border-radius: 40px;
+          width: 70%;
+          margin: 10px;
+          padding: 0 3px;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      #search_input_div button{
+          border: none;
+          background-color:white;
+          width: 10%;
+          cursor: pointer;
+          color: black;
+          font-size: larger;
+      }
+      #search_input_div input{
+          width: 75%;
+          height: 35px;
+          outline: none;
+          border: none;
+          font-size: 12px;
+      }
+      #profile_in_search_page{
+          border-radius: 40px;
+          width: 120px;
+          color: white;
+          border: 0px solid white;
+          height: 35px;
+          font-size: small;
+          margin: 10px;
+          background-color: #050505 ;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 4px;
+          cursor: pointer;
+          
+         
+      }
+      #profile_in_search_page button{
+          border: none;
+          color: white;
+          margin: 0 3px;
+          background-color: #050505 ;
+          cursor: pointer;
+          font-size: larger;
+      }
+  
+      /* css for search result */
+      #top_result{
+        display: flex;
+      }
+      .result_title{
+        color: white;
+        font-size: xx-large;
+        font-weight: 600;
+      }
+      #top_result_song{
+        width: 400px;
+        /* background-color: #121212; */
+        padding: 10px;
+      }
+      #top_result_song>div{
+        background-color: rgb(59, 62, 66);
+        cursor: pointer;
+        color: white;
+        border-radius: 8px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        
+        line-height: 0.1px;
+        width: 300px;
+        height: 300px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: relative;
+      }
+      #top_result_song>div img{
+        width: 80px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+      }
+      .result_song_dec{
+        color: rgb(40, 38, 38);
+        font-weight: 600;
+        font-size: small;
+      }
+      #top_result_song>div button{
+        cursor: pointer;
+        z-index: 1;
+        align-self: flex-end;
+        width: 60px;
+        height: 60px;
+        font-size: xx-large;
+        padding: 0px;
+        border-radius: 80px;
+        text-align: center;
+        border: none;
+        color: white;
+        background-color: rgb(49, 169, 49);
+        position:absolute;
+        bottom: 10%;
+
+        /* visibility: hidden; */
+      }
+      #top_result_song>div button:hover{
+        background-color: rgb(20, 20, 179);
+      }
