@@ -135,3 +135,16 @@ body {
 #bottom_play_button i{
     color: black;   
 }
+
+
+
+.starting_time  {
+    display: inline;
+    /* border: 1px solid white; */
+    width: 30px;
+}
+
+#curr_song_time , #curr_song_time1{
+    display: inline;
+    /* border: 1px solid white; */
+}
