@@ -14,6 +14,8 @@ import {
 let Main_container =  document.getElementById("Main-container")
 let Nav_Bar_Container =  document.getElementById("Nav-Bar-Container")
 
+
+
 let width = screen.width;
 document.getElementById("Nav-Bar-Container").style.width = `${width-350}px`
 lets_do_resize()

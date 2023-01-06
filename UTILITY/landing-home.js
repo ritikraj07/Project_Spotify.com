@@ -1,7 +1,7 @@
 
-// import { refreshToken } from "../UTILITY/api_call.js";
-let t = localStorage.getItem("spotify_token");
+
 import { getCategoryPlaylists } from "../UTILITY/api_call.js";
+let t = localStorage.getItem('spotify_token')
 
 
 window.addEventListener("load", async function(){
