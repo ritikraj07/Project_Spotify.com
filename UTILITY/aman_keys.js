@@ -1,9 +1,19 @@
+// const getKeys = () => {
+//     return {
+//         CLIENT_ID: "cd8a54c7540b43909ca6066a51dc05c1",
+//         CLIENT_SECRET: "541a0652d12b40449c1f0f486633fbc9",
+//     };
+// };
+
+// Aman 2nd Key 
+
 const getKeys = () => {
     return {
-        CLIENT_ID: "cd8a54c7540b43909ca6066a51dc05c1",
-        CLIENT_SECRET: "541a0652d12b40449c1f0f486633fbc9",
+       CLIENT_ID: '3981b3bdd9c54805aa357fb24db34656',
+        CLIENT_SECRET: ' 1c3b84dc881a45579df9192003dcae35', 
     };
-};
+  };
+
 
 export default getKeys;
 

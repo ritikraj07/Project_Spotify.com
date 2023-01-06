@@ -1,4 +1,5 @@
 import { lets_do_resize } from "../COMPONENTS/com.js";
+import {search_main_container, search_page_navbar,search_result_div} from "../COMPONENTS/SearchContainerPage.js";
 import {
     refreshToken,
     getPlaylists,
@@ -16,7 +17,10 @@ import {
         let track_items_ = res.tracks.items
         // console.log(res)
         // console.log(artist_items_)
-        console.log(track_items_) //working
+       // console.log(track_items_) //working
+        document.getElementById("Main-container").innerHTML = ""
+        document.getElementById("Main-container").innerHTML= search_result_div(track_items_)
+
       },function(e){
         console.log("you are getting following error", e)
       })
@@ -58,22 +62,7 @@ import {
   var micbtm = document.getElementById("mic_btm")
   micbtm.addEventListener('click', Mic_search)
   
-  let Main_container =  document.getElementById("Main-container")
+ 
+
   
 
-
-
-
-
-
-
-
-
-
-
-//trial of block in mid container/ main container
-
-$(".block_div").click(function(){
-  // $(this).hide();
-  console.log(this.id)
-});

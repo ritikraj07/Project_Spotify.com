@@ -1,9 +1,7 @@
-* {
-    box-sizing: border-box;
-}
+
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-weight: bold; */
     background-color: black;
     color: white;
     height: 100vh;
@@ -45,17 +43,17 @@ body {
     fill: #05ac05;
 }
 .control_top>div {
-    background-color: #181818;
+    background-color: #060505;
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: #9c9c9c;
+    fill: #f9f5f5;
     cursor: pointer;
 }
 .control_top>div:nth-child(3) {
     background-color: white;
     border-radius: 500px;
-    padding: 10px;
+    padding: 5px;
     fill: black;
 }
 .control_bottom {
@@ -64,14 +62,11 @@ body {
     gap: 10px;
     align-items: center;
 }
-.progress_container {
-    height: 4px;
-    background-color: #505050;
+#myProgressBar{
     width: 500px;
-    border-radius: 15px;
-    overflow: hidden;
-    position: relative;
-    transition: width ease 400ms;
+    height: 4px;
+    background-color: grey;
+    cursor: pointer;
 }
 .progress_bar {
     background-color: white;
@@ -126,34 +121,17 @@ body {
     transition: fill ease 300ms;
     width: 300px;
     justify-content: flex-end;
+    margin-right: 30px;
 }
-.slider-container{
-    display: flex;
-    align-items: center;
-    padding: 25px;
-}
-.slider input{
-    position: absolute;
+.slider-container>progress{
     width: 80px;
     height: 4px;
-    background-color: transparent;
-    z-index: 99;
+    margin-bottom: 10px;
+    background-color: #505050;
 }
-.slider input::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background-color: #fff;
-    border-radius: 50%;
-    cursor: pointer;
+.pause{
+    display: none;
 }
-.slider progress{
-    width: 80px;
-    height: 4px;
-    position: absolute;
-    overflow: hidden;
-}
-.slider progress::-webkit-progress-bar{
-    background-color: #f0f0f0;
-}
-.slider progress::-webkit-progress-value{
-    background-color: #05ac05;
+#bottom_play_button i{
+    color: black;   
 }
