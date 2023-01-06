@@ -289,8 +289,10 @@ async function playlistMainBody(Songs_Data) {
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>inilisizing play pause Buttons <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-let oldPlay;
+let oldPlay ;
+let currSong ;
 let playingIndex;
+let audioElement ;
 function showSongs(sdata) {
     let counteran = 1;
     let stldiv = document.createElement("div");
@@ -311,11 +313,10 @@ function showSongs(sdata) {
 
 
         //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Handling Play Pause Button <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
         let audioElement = new Audio(elem.track.preview_url);
 
         div1.addEventListener("click", function () {
-            console.log(elem);
+            
             localStorage.setItem("box-song",JSON.stringify(elem));
 
             if (audioElement.paused || audioElement.currentTime <= 0) {
@@ -468,6 +469,25 @@ function showSongs(sdata) {
     return stldiv;
 
 }
+
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Play Pause Controller >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+masterPlay.addEventListener("click", SongController  ) 
+
+function SongController() {
+    
+  if( oldPlay != undefined && oldPlay.paused || oldPlay.currentTime <=0){
+   
+    oldPlay.play();
+    masterPlay.classList.remove('fa-play-circle');
+    masterPlay.classList.add('fa-pause-circle');
+  }
+  else{
+    oldPlay.pause();
+    masterPlay.classList.add('fa-play-circle');
+    masterPlay.classList.remove('fa-pause-circle');
+  }
+}
+
 
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< showing Liked Songs Play List with top play button  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
