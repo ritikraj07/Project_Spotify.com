@@ -38,22 +38,8 @@
       bottom: 1px;
 			transition: all 0.4s;
 		}
-		p {
-			font-family: Arial, Helvetica, sans-serif;
-			font-weight: bold;
-      margin-bottom: 20px;
-		}
-		.checkbox:checked + .toggle::after {
-			left : 31px;
-		}
-		.checkbox:checked + .toggle {
-			background-color:black;
-            color: white;
-            font-size: 10px;
-		}
-		.checkbox {
-			display : none;
-		}
+	
+		
 #pages div{
   margin-left: 20px;
   color: white;
@@ -151,7 +137,7 @@ hr{
     grid-template-columns: repeat(5, 1fr);
     /* width: 100%; */
     padding: 0 10px;
-    gap: 1%;
+    gap: 10px;
     row-gap: 5%;
     margin-bottom: 50px;
     
@@ -259,6 +245,7 @@ hr{
   @media (max-width : 900px) {
     .playlist_container {
       grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 200px;
     }
   
     .playlist_tab:nth-child(6) {
@@ -272,6 +259,8 @@ hr{
   @media (max-width : 700px) {
     .playlist_container {
       grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 200px;
+      gap: 2%;
     }
     .header {
       flex-direction: column;
@@ -279,11 +268,18 @@ hr{
     .playlist_tab:nth-child(6) {
       display: none;
     }
+
+    
+
+
+
   }
 
   @media ( max-width : 500px) {
     .playlist_container {
       grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 400px;
+      gap: 1%;
     }
   
     .playlist_tab:nth-child(6) {
