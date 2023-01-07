@@ -25,11 +25,13 @@ We have been given the task to clone the Spotify website in 1 week at the end of
 
  1) Dilasa Thapa has created the Landing page and profile page of Spotify Website.
 Here is how page looks :-
+<img src="https://snipboard.io/qkcbzK.jpg"/>
 
 ![image](https://user-images.githubusercontent.com/98457822/211160266-6894b6b2-ddcd-44a0-a16e-c788d64497de.png)
 
 
 profile page :-
+
 ![image](https://user-images.githubusercontent.com/98457822/211161069-c0ce658d-db30-4c8c-83fe-7c05ffd80e0b.png)
 
 
@@ -38,6 +40,7 @@ profile page :-
  When you want to go on Home Page it will show the pop up like you have to login first
 
  Here is how  page looks :-
+<img src="https://snipboard.io/sIzAMu.jpg"/>
 
 ![image](https://user-images.githubusercontent.com/98457822/211160311-7d5d5687-a0d6-4a84-bc53-23e9ec327aaf.png)
 
@@ -48,11 +51,13 @@ profile page :-
 For that click on the SignIn/Up button of the navbar.
 
 Here is how SignUp page looks :- 
+<img src="https://snipboard.io/n1EVK5.jpg"/>
 
 ![image](https://user-images.githubusercontent.com/98457822/211160349-5fa0fb9d-8656-47cd-9bd7-fd1765e8880e.png)
 
 
 This is how Login Page looks like :-
+<img src="https://snipboard.io/sIzAMu.jpg"/>
 
 
 ![image](https://user-images.githubusercontent.com/98457822/211161102-f9f3fc57-2d78-4d90-9a1e-3b26f8262771.png)
@@ -63,6 +68,7 @@ After Successful Login It will redirect to home page and show user name at the t
 3) Now Comes the Home Page, Amit Sisodiya has created  the home page and side navbar of Spotify Website.
 
 Here is how Home page looks :- 
+<img src="https://snipboard.io/nrUEQp.jpg"/>
 
 
 ![image](https://user-images.githubusercontent.com/98457822/211160483-4cd13a2c-e6f4-4013-b8d7-3fc4db5387ab.png)
@@ -79,7 +85,9 @@ Here in Side Navbar having some pages link like Home, Searchbar,Library and play
 4) Now we come to the Searchbar page, Ritik raj has created  this page of Spotify Website.
 
 Here is how Searchbar page looks :- 
+
 ![image](https://user-images.githubusercontent.com/98457822/211160659-ea3707a0-e40c-4553-842a-852967d0ea29.png)
+
 
 
 Now if we we are searching any song by Mike or Typing, the result will be display and we can play any song
@@ -90,11 +98,13 @@ Here is how Searchbar page looks after data searching :-
 ![image](https://user-images.githubusercontent.com/98457822/211160758-4f0ee124-efb8-4ed2-8144-c417adb14f09.png)
 
 
+
 5) Now we come to the Playlist page which created by the Aman Ninave 
 
 in this page we are geting the data in an albumb according to the song category
 
 Here is how playlist page looks :- 
+<img src="https://snipboard.io/TzksOl.jpg"/>
 
 
 ![image](https://user-images.githubusercontent.com/98457822/211160958-49f96be3-9e3f-4386-bfbf-4f75745b1330.png)
@@ -108,5 +118,7 @@ There are have many features like play, pause, forword, backword etc.
 
 Here is how Player section looks :- 
 
+
 ![image](https://user-images.githubusercontent.com/98457822/211161012-583a5e60-f64c-42ea-a283-81400c8f4f14.png)
+
 

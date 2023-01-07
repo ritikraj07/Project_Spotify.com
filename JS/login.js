@@ -6,7 +6,7 @@ let verify=()=>{
     let password=document.getElementById("password").value;
     let validuser = false;
     let usernotallowed = false;
-
+    let login_user = localStorage.setItem("login_user", false) 
     users.map(function (el) {
         if (el.email == email_mobile_number && el.password == password) {
             validuser = true;
@@ -19,6 +19,7 @@ let verify=()=>{
     });
     if (validuser) {
         document.getElementById("loading").style.display = "block";
+        localStorage.setItem("login_user", true) 
         setTimeout(function(){
             location.href = "../HTML/index.html";
         },3000)

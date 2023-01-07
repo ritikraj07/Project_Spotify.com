@@ -1,5 +1,6 @@
 import { lets_do_resize } from "../COMPONENTS/com.js";
-import {search_main_container, search_page_navbar, search_result_div} from "../COMPONENTS/SearchContainerPage.js";
+import {search_main_container, search_page_navbar, 
+  search_result_div} from "../COMPONENTS/SearchContainerPage.js";
 import {
     refreshToken,
     getPlaylists,
@@ -10,7 +11,9 @@ import {
   } from "../UTILITY/api_call.js";
 
 import { main_container_before_login, nav_bar_before_login,
-   footer_before_login, right_sidebar, main_container_after_login } from "../COMPONENTS/landing_before.js";
+   footer_before_login, right_sidebar,
+    main_container_after_login, footer_after_login, 
+  nav_bar_after_login} from "../COMPONENTS/landing_before.js";
 // lets_do_resize()
 
 let width = screen.width;
@@ -42,6 +45,11 @@ let Nav_Bar_Container =  document.getElementById("Nav-Bar-Container")
 let footer_container = document.getElementById("Footer-Container")
 let sidebar = document.getElementById("Side-Bar-Container");
 
+let login_user = localStorage.getItem("login_user")
+
+
+
+
 Nav_Bar_Container.innerHTML = nav_bar_before_login()
 Main_container.innerHTML = main_container_before_login()
 footer_container.innerHTML = footer_before_login()
@@ -62,19 +70,20 @@ function login(){
   window.location.href = "../HTML/login.html";
 }
 var spotify_users = localStorage.getItem("spotify_users") || null
-if(spotify_users =! null){
-  
+if(login_user =="true"){
   Main_container.innerHTML = ""
-  Nav_Bar_Container.innerHTML =  search_page_navbar()
+  footer_container.innerHTML =""
+  Nav_Bar_Container.innerHTML =  nav_bar_after_login()
   Main_container.innerHTML = main_container_after_login()
-  footer_container.innerHTML = ""
-
-}  
+  footer_container.innerHTML = footer_after_login()
+}else{
+  
+}
 
 
 document.querySelector("#profile_in_search_page").addEventListener("click", account_page)
 function account_page(){
-  window.location.href = "/Project_Spotify.com/HTML/account.html"
+  window.location.href = "./../HTML/account.html"
 }
 
 var users = JSON.parse(localStorage.getItem("spotify_users"))
@@ -97,36 +106,42 @@ var darkmode = document.getElementById("dark");
 darkmode.addEventListener("click", function(){
     darkmode.classList.toggle("active");
     content.classList.toggle("night");
-    // Main_container.classList.toggle("active")
-    // Main_container.classList.toggle("night")
+
 });
 
 
 
 
+var mode = localStorage.setItem("mode", JSON.stringify("night"))
 
-// var day_night = document.getElementById("day_night")
-
-// var mode = localStorage.setItem("mode", "night")
-
-
-// day_night.addEventListener('click', day_night_fun)
-
-// function day_night_fun(){
-//   if(mode=="night"){
-//     localStorage.setItem("mode", "day")
-//     Main_container.style.background = "white"
-//   }else{
-//     localStorage.setItem("mode", "night")
-//   }
-// }
+var day_night = document.querySelector("#dark")
+day_night.addEventListener("click", function(){
+  day_night_fun()
+})
 
 
+function day_night_fun(){
+  mode = JSON.parse(localStorage.getItem("mode"))
+  if(mode=="night"){
+    localStorage.setItem("mode",JSON.stringify("day"))
+    Nav_Bar_Container.style.background = "white"
+  }else{
+    localStorage.setItem("mode", JSON.stringify("night"))
+    Nav_Bar_Container.style.background = "black"
+  }
+}
+
+let homebtm = document.querySelector("#pages div:nth-child(1)")
 let searchbtm = document.querySelector("#pages div:nth-child(2)")
+
+homebtm.addEventListener('click', function(){
+  window.location.reload()
+})
 
 searchbtm.addEventListener('click', search_fun)
 
 function search_fun(){
   Main_container.innerHTML = search_main_container()
+  document.getElementById("search_input_div").style.visibility = 'visible'
 }
 
