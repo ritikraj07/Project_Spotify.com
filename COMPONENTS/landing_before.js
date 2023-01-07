@@ -99,7 +99,7 @@ function right_sidebar(){
     return ` 
     <div id="logo"> 
        <div id="ban"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Spotify-256.png" alt=""></div>
-        <div> <h1>Spotify</h1></div>
+        <div> <h1 class="xyz">Spotify</h1></div>
         <div>
        
         <label id="dark" onclick="day_night_fun()"></label>
@@ -109,14 +109,14 @@ function right_sidebar(){
     </div>
     
     <div id="pages">
-        <div> <i class="fa-solid fa-house"></i>Home </div> 
-        <div><i class="fa-solid fa-magnifying-glass"></i>  Search</div> 
-        <div><i class="fa-solid fa-music"></i> Your Library</div>
-        <div><i class="fa-solid fa-plus"></i>Create Playlist</div>
-        <div><i class="fa-solid fa-heart"></i>Liked Song</div>
+        <div> <i class="fa-solid fa-house"></i><span class="xyz"> Home</span></div> 
+        <div><i class="fa-solid fa-magnifying-glass"></i> <span class="xyz"> Search</span></div> 
+        <div><i class="fa-solid fa-music"></i><span class="xyz"> Your Library</span></div>
+        <div><i class="fa-solid fa-plus"></i><span class="xyz"> Create Playlist</span></div>
+        <div><i class="fa-solid fa-heart"></i><span class="xyz"> Liked Song</span></div>
     </div>
     <hr>
-     <div id="app"> <p><i class="fa-regular fa-circle-down"></i>install App</p></div>
+     <div id="app"> <p><i class="fa-regular fa-circle-down"></i> <span class="xyz"> install App  </span></p></div>
     <div class="resizer">
     </div>
 `
@@ -263,8 +263,11 @@ function footer_after_login(){
 function nav_bar_after_login(){
     return `<div id="search_navbar">
 <div>
-    <div><button class="page_change_btm"><i class="fa-solid fa-greater-than fa-rotate-180"></i></button></div>
-    <div><button class="page_change_btm"><i class="fa-solid fa-greater-than "></i></button></div>
+<div class="zyx">
+        <h1 style=" color:green" >Spotify</h1>
+    </div>
+    <div><button class="page_change_btm xyz"><i class="fa-solid fa-greater-than fa-rotate-180 "></i></button></div>
+    <div><button class="page_change_btm xyz" ><i class="fa-solid fa-greater-than "></i></button></div>
     
     <div id="search_input_div" style="visibility: hidden;">
         <button><i class="fa-solid fa-magnifying-glass"></i></i></button>
@@ -272,14 +275,21 @@ function nav_bar_after_login(){
         <button id="mic_btm"><i class="fa-solid fa-microphone"></i></button>
     </div>
 </div>
-<div id="profile_in_search_page"   >
+<div class="xyz" id="upgrade" style="border:1px solid white; border-radius:20px; 
+width:12%; padding:2px 15px 2px 10px ;  
+cursor:pointer; background:black;">
+<p style="margin:4px; color:white;" >UPGRADE</p>
+</div>
+
+<div id="profile_in_search_page">
     <button><i class="fa-regular fa-user"></i></button>
-    <span id="profile_name"> Ritik Raj</span>
+    <span id="profile_name"> Ritik </span>
    
     <button><i class="fa-sharp fa-solid fa-circle-chevron-down"></i></button>
     
 </div>
-</div>`
+</div>
+`
 }
 
 

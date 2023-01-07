@@ -17,7 +17,7 @@ import { main_container_before_login, nav_bar_before_login,
 // lets_do_resize()
 
 let width = screen.width;
-document.getElementById("Nav-Bar-Container").style.width = `${width-300}px`
+// document.getElementById("Nav-Bar-Container").style.width = `${width-300}px`
 lets_do_resize()
  console.log(width)
 // function for auto change token
@@ -76,8 +76,9 @@ if(login_user =="true"){
   Nav_Bar_Container.innerHTML =  nav_bar_after_login()
   Main_container.innerHTML = main_container_after_login()
   footer_container.innerHTML = footer_after_login()
+  // Nav_Bar_Container.style.position = "static";
 }else{
-  
+  Nav_Bar_Container.style.position = "fixed";
 }
 
 
@@ -143,5 +144,22 @@ searchbtm.addEventListener('click', search_fun)
 function search_fun(){
   Main_container.innerHTML = search_main_container()
   document.getElementById("search_input_div").style.visibility = 'visible'
+  document.getElementById("upgrade").style.visibility = 'hidden'
 }
+
+
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("Nav-Bar-Container");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
 

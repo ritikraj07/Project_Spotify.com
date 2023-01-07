@@ -4,7 +4,9 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
+        padding: 20px;
       }
+
       #body_container_for_search > div {
         /* background-color: aqua; */
         width: 100%;
@@ -14,6 +16,7 @@
         overflow: hidden;
         position: relative;
         cursor: pointer;
+        
       }
 
       #body_container_for_search > div img {
@@ -356,3 +359,79 @@
         font-size: small;
         line-height: 18px;
       }
+
+
+
+      @media screen and (max-width:800px) {
+         #body_container_for_search {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 20px;
+      }
+      #search_input_div input{
+        width: 60%;
+      }
+
+      #search_input_div button{
+        margin: 0 10px;
+      }
+
+
+
+      }
+
+       @media screen and (max-width:700px) {
+           #body_container_for_search {
+            grid-template-columns: repeat(2, 1fr);
+            margin: 20px;
+          }
+          #profile_in_search_page{
+            display: none;
+          }
+
+          #search_input_div{
+            margin-left: 30px;
+            width: 200px;
+          }
+          #search_input_div input{
+            width: 100px;
+            margin: 0 10px;
+          }
+    
+          #search_input_div button{
+            margin: 0;
+          }
+
+
+
+       }
+
+         @media screen and (max-width:500px) {
+           #body_container_for_search {
+            grid-template-columns: repeat(1, 1fr);
+            margin: 20px;
+          }
+
+              #body_container_for_search > div {
+                width: 80%;
+                height: 223px;
+                margin-left: 40px;
+              }
+
+              #profile_in_search_page{
+                display: none;
+              }
+              #search_input_div{
+                margin-left: 30px;
+                width: 200px;
+              }
+              #search_input_div input{
+                width: 100px;
+                margin: 0 10px;
+              }
+        
+              #search_input_div button{
+                margin: 0;
+              }
+            
+
+       }

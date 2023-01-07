@@ -1,7 +1,7 @@
 function search_main_container(){
   return ` <div>
   <div>
-    <b><h1 style="color:white;">Browse All</h1></b>
+    <b><h1 style="color:white; margin:0 20px;">Browse All</h1></b>
   </div>
   <div id="body_container_for_search">
     <div
