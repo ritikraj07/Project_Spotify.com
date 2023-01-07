@@ -54,10 +54,10 @@ if (token_timer === "0" || time != token_timer || spotify_token == undefined || 
 
 async function getplaylistdata() {
 
-    var playlistdata = await getPlaylists("romance", "11", spotify_token);
+    var playlistdata = await getPlaylists("gaming", "11", spotify_token);
 
     console.log(playlistdata);
-    let playlistdetails = playlistdata[0];
+    let playlistdetails = playlistdata[2];
     console.log("PlaylistDetails : ", playlistdetails)
 
     localStorage.setItem("PlayList-Name", playlistdetails.name);
@@ -65,6 +65,7 @@ async function getplaylistdata() {
     localStorage.setItem("playList-Id", playlistdetails.id);
     localStorage.setItem("playList-ImageURL", playlistdetails.images[0].url)
 
+    window.location.href ="./../HTML/sfPlaylist.html";
     return playlistdata;
 }
 
@@ -91,10 +92,10 @@ async function getalbumdata() {
 
 
 async function getdata() {
-    let id = "37i9dQZF1DWVDCraF986xg";
-    localStorage.setItem("playList-Id", id);
+    // let id = "37i9dQZF1DWVDCraF986xg";
+    // localStorage.setItem("playList-Id", id);
 
-    // let id = localStorage.getItem("playList-Id");
+     let id = localStorage.getItem("playList-Id");
     var trackdata = await getTrack(id, spotify_token);
 
     console.log(trackdata.items);
@@ -283,7 +284,9 @@ async function playlistMainBody(Songs_Data) {
     var plrecomendedsonglst = document.createElement("div")
     plrecomendedsonglst.id = "pl_recomended_songs_list";
 
-    ODiv.append(head1div, head2div, head4div, plsonglist, plfindmore, plrecomendedheading, plrecomendedsonglst);
+    // ODiv.append(head1div, head2div, head4div, plsonglist, plfindmore, plrecomendedheading, plrecomendedsonglst);
+    ODiv.append(head1div, head2div, head4div, plsonglist);
+
 
     document.querySelector("#pl_main_div").append(ODiv);
 }
@@ -444,6 +447,9 @@ function showSongs(sdata) {
         let dursec = duration % 60;
         if (dursec < 10) {
             dursec = dursec * 10;
+            if(dursec > 59 ){
+                dursec = dursec / 2 ;
+            }
         }
 
         div7.textContent = durminfix + " : " + dursec;
@@ -676,7 +682,7 @@ function ChangeSongName (elem) {
     SongName1.textContent = elem.track.name;
     let ArtistName1 = document.querySelector("#player_artist_name")
     ArtistName1.textContent = elem.track.album.artists[0].name ;
-
+    localStorage.setItem("box-song" , JSON.stringify(elem));      // Storing to local stroage current song
 }
 
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< showing Liked Songs Play List with top play button  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
