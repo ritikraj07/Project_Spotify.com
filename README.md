@@ -24,21 +24,18 @@ We are the team of six people.
 We have been given the task to clone the Spotify website in 1 week at the end of unit-5 at Masai School with the concepts we have learned(like HTML,CSS,JavaScript,API Fetch,DOM-Manipulation etc) in unit-5. 
 
  1) Dilasa Thapa has created the Landing page and profile page of Spotify Website.
-Here is how page looks -
+Here is how page looks :-
 
 
 
-profile page-
+profile page :-
 
 
 
 
  When you want to go on Home Page it will show the pop up like you have to login first
 
- Here is how  page looks -
-
-
-
+ Here is how  page looks :-
 
 
 
@@ -53,11 +50,11 @@ profile page-
 
 For that click on the SignIn/Up button of the navbar.
 
-Here is how SignUp page looks- 
+Here is how SignUp page looks :- 
 
 
 
-This is how Login Page looks like-
+This is how Login Page looks like :-
 
 
 
@@ -68,8 +65,9 @@ After Successful Login It will redirect to home page and show user name at the t
 
 3) Now Comes the Home Page, Amit Sisodiya has created  the home page and side navbar of Spotify Website.
 
-Here is how Home page looks- 
-   
+Here is how Home page looks :- 
+
+
 
 
 
@@ -77,10 +75,32 @@ Here is how Home page looks-
 Here in Side Navbar having some pages link like Home, Searchbar,Library and play list
 
 
-Now we come to the Searchbar page, Ritik raj has created  this page of Spotify Website.
+4) Now we come to the Searchbar page, Ritik raj has created  this page of Spotify Website.
 
-Here is how Home page looks- 
-
-
+Here is how Searchbar page looks :- 
 
 
+Now if we we are searching any song by Mike or Typing, the result will be display and we can play any song
+
+Here is how Searchbar page looks after data searching :-
+
+
+
+
+
+5) Now we come to the Playlist page which created by the Aman Ninave 
+
+in this page we are geting the data in an albumb according to the song category
+
+Here is how playlist page looks :- 
+
+
+
+
+
+6)Now we come to the footer section in which have Audio player that is created by the Vishawjeet Singh
+
+in this section we can see the Audio player if we are plaing any song it's player will look in footer section
+There are have many features like play, pause, forword, backword etc.
+
+Here is how Player section looks :- 
