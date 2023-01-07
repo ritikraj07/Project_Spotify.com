@@ -2,6 +2,8 @@
 
 <h2>Deployed Link-.</h2>
 
+https://starlit-salmiakki-6e2eb0.netlify.app/html/
+
 
 <h2>Hello, thanks for visiting the project. This was a project assigned to us by the <b>Masai School</b>, to clone the <b>spotify</b> website. <b>Spotify</b> is one of the world's most popular online music listening platform, which provides us millions of songs belonging to different regions, languages, and genres. On spotify we can create our own playlist and listen to songs as per our mood. </h2>
 
