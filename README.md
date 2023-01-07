@@ -24,7 +24,7 @@ We are the team of six people.
 We have been given the task to clone the Spotify website in 1 week at the end of unit-5 at Masai School with the concepts we have learned(like HTML,CSS,JavaScript,API Fetch,DOM-Manipulation etc) in unit-5. 
 
  1) Dilasa Thapa has created the Landing page and profile page of Spotify Website.
-Here is how  page looks -
+Here is how page looks -
 
 
 
@@ -80,3 +80,7 @@ Here in Side Navbar having some pages link like Home, Searchbar,Library and play
 Now we come to the Searchbar page, Ritik raj has created  this page of Spotify Website.
 
 Here is how Home page looks- 
+
+
+
+
