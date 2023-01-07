@@ -24,13 +24,15 @@ We are the team of six people.
 We have been given the task to clone the Spotify website in 1 week at the end of unit-5 at Masai School with the concepts we have learned(like HTML,CSS,JavaScript,API Fetch,DOM-Manipulation etc) in unit-5. 
 
  1) Dilasa Thapa has created the Landing page and profile page of Spotify Website.
+
 Here is how page looks :-
-<img src="https://snipboard.io/qkcbzK.jpg"/>
+
 
 ![image](https://user-images.githubusercontent.com/98457822/211160266-6894b6b2-ddcd-44a0-a16e-c788d64497de.png)
 
 
 profile page :-
+
 
 ![image](https://user-images.githubusercontent.com/98457822/211161069-c0ce658d-db30-4c8c-83fe-7c05ffd80e0b.png)
 
@@ -40,7 +42,7 @@ profile page :-
  When you want to go on Home Page it will show the pop up like you have to login first
 
  Here is how  page looks :-
-<img src="https://snipboard.io/sIzAMu.jpg"/>
+
 
 ![image](https://user-images.githubusercontent.com/98457822/211160311-7d5d5687-a0d6-4a84-bc53-23e9ec327aaf.png)
 
@@ -51,13 +53,12 @@ profile page :-
 For that click on the SignIn/Up button of the navbar.
 
 Here is how SignUp page looks :- 
-<img src="https://snipboard.io/n1EVK5.jpg"/>
+
 
 ![image](https://user-images.githubusercontent.com/98457822/211160349-5fa0fb9d-8656-47cd-9bd7-fd1765e8880e.png)
 
 
 This is how Login Page looks like :-
-<img src="https://snipboard.io/sIzAMu.jpg"/>
 
 
 ![image](https://user-images.githubusercontent.com/98457822/211161102-f9f3fc57-2d78-4d90-9a1e-3b26f8262771.png)
@@ -68,7 +69,6 @@ After Successful Login It will redirect to home page and show user name at the t
 3) Now Comes the Home Page, Amit Sisodiya has created  the home page and side navbar of Spotify Website.
 
 Here is how Home page looks :- 
-<img src="https://snipboard.io/nrUEQp.jpg"/>
 
 
 ![image](https://user-images.githubusercontent.com/98457822/211160483-4cd13a2c-e6f4-4013-b8d7-3fc4db5387ab.png)
@@ -104,7 +104,6 @@ Here is how Searchbar page looks after data searching :-
 in this page we are geting the data in an albumb according to the song category
 
 Here is how playlist page looks :- 
-<img src="https://snipboard.io/TzksOl.jpg"/>
 
 
 ![image](https://user-images.githubusercontent.com/98457822/211160958-49f96be3-9e3f-4386-bfbf-4f75745b1330.png)
