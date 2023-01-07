@@ -134,7 +134,7 @@ hr{
     padding: 0 10px;
     font-weight: bolder;
     font-size: 14px;
-    color: white;
+    /* color: white; */
   }
   
   .header>div:last-child {

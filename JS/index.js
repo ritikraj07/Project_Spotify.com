@@ -16,7 +16,7 @@ import { main_container_before_login, nav_bar_before_login,
 let width = screen.width;
 document.getElementById("Nav-Bar-Container").style.width = `${width-300}px`
 lets_do_resize()
- 
+ console.log(width)
 // function for auto change token
 var spotify_token = localStorage.getItem("spotify_token")
 let token_timer = localStorage.getItem('token_timer',"time")||0
