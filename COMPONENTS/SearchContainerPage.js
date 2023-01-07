@@ -803,7 +803,8 @@ function search_page_navbar(){
   </div>
   <div id="profile_in_search_page">
       <button><i class="fa-regular fa-user"></i></button>
-      Ritik Raj
+      <span id="profile_name"> Ritik Raj</span>
+     
       <button><i class="fa-sharp fa-solid fa-circle-chevron-down"></i></button>
       
   </div>

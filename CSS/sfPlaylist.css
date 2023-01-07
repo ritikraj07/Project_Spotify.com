@@ -23,7 +23,7 @@ main {
     display: flex;
     justify-content: right;
     /* margin-top: 40px; */
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     box-sizing: border-box;
     
 }
@@ -48,7 +48,7 @@ main {
 
     width: 100%;
     height: fit-content;
-    border: 1px solid;
+    /* border: 1px solid; */
     box-sizing: border-box;
 
 }

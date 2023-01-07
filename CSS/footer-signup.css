@@ -1,12 +1,12 @@
 *{
     box-sizing: border-box;
 }
-body {
+#footerbody {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     background-color: black;
     color: white;
-    height: 100vh;
+    height: inherit;
     margin: 0;
 }
 
@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 20px 30px;
     background: linear-gradient(90deg, #af2896, #509bf5);
 }
 .page_bottom_left>p {
@@ -35,6 +35,7 @@ body {
     font-size: 15px;
     background-color: white;
     border: none;
+    color: black;
 }
 .signup_btn, .login_btn {
     display: flex;

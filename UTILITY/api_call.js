@@ -38,7 +38,7 @@ async function getPlaylists(category, limit, TOKEN) {
     }
   );
   let data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data.playlists.items;
   
   

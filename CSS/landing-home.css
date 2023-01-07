@@ -1,12 +1,13 @@
 
 * {
-    color: #fff;
+    /* color: #fff; */
     font-family: 'Montserrat', sans-serif;
 }
 
 #landing-home {
     margin: -1%;
     border: 0px solid white;
+    color: white;
     /* margin: 0; */
     width: 101.5%;
     /* background-color: rgb(27, 27, 27); */
@@ -49,7 +50,7 @@
 #f-show {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 2%;
 
 }
@@ -57,7 +58,7 @@
 #p-show {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 2%;
 
 }
@@ -65,14 +66,14 @@
 #m-show {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 2%;
 }
 
 #b-show {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 2%;
 }
 
@@ -82,8 +83,9 @@
     border: 0px solid white;
     height: 260px;
     background-color: #161616d0;
+    padding: 5px;
     padding-bottom: -15px;
-
+    border-radius: 5px;
 
 }
 
@@ -112,11 +114,16 @@
     flex-wrap: wrap;
     border: 0px solid skyblue;
     padding-top: -20px;
-    font-size: medium;
+    font-size: small;
     padding-left: 3px;
-    height: 54px;
-    font-weight: 900;
+    height: 55px;
+    font-weight: 600;
+    
+
 }
+.has-overflow:after {
+    content: "..."
+  }
 
 .btn {
     height: 50px;
@@ -160,15 +167,15 @@
 
 #show-login-page {
     margin-top: 5%;
-    height: 80%;
+    height: 70%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 20;
     top: 0;
     left: 0;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
-    overflow-x: hidden;
+    overflow-y: hidden;
     transition: 0.5s;
 }
 
@@ -180,6 +187,8 @@
     gap: 50px;
     /* padding: 20%; */
     background-image: linear-gradient(#720000d6, #1e1e1e);
+    /* z-index: 19; */
+
 }
 
 #page-img {
@@ -226,22 +235,24 @@
     width: 60%;
     border-radius: 18px;
     border: 2px solid #fff;
-    padding-top: 16.5px;
+    padding-top: 2.5%;
     cursor: pointer;
+
 }
 #notify div:nth-child(3) h5{
     cursor: pointer;
 }
 
 #close{
-    color: #fff;
+    color: rgb(255, 255, 255);
     height: 25px;
     display: block;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: black;
     cursor: pointer;
     margin-left: 50%;
-    margin-top: 1%;
-
+    margin-top: -8%;
+    z-index: 60;
+    position: relative;
 }
 .appendedimg{
     height: 100%;
@@ -251,9 +262,9 @@
     background-color: rgb(15,15,15);
     color: #fff;
     display: grid;
-    width: 103%;
+    /* width: 104%; */
     height: 70px;
-    
+    padding: 0 20px;
     grid-template-columns: repeat(6, 1fr);
     
 }
@@ -264,6 +275,7 @@
     cursor: pointer;
     margin-top: 15px;
     margin-bottom: 20px;
+    color: white;
     
     
 }
