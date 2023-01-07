@@ -2,6 +2,8 @@
 
 Deployed Link-.
 
+https://starlit-salmiakki-6e2eb0.netlify.app/html/
+
 
 Hello, thanks for visiting the project. This was a project assigned to us by the Masai School, to clone the spotify website. Spotify is one of the world's most popular online music listening platform, which provides us millions of songs belonging to different regions, languages, and genres. On spotify we can create our own playlist and listen to songs as per our mood. 
 
