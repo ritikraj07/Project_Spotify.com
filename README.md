@@ -26,5 +26,5 @@ We have been given the task to clone the Spotify website in 1 week at the end of
 Dilasa Thapa has created the Landing page, profile page and the home page of Spotify Website.
 
 
-Here is how SignUp page looks 
-<img width="428" alt="image" src="https://user-images.githubusercontent.com/96377101/205642694-39de144c-5d90-4062-ad4f-cccb0faf614f.png">
+Here is how  page looks 
+<img width="428" alt="image" src="https://media.istockphoto.com/id/1399764585/photo/shallow-focus-of-a-high-permanence-dac-seen-connected-via-cables-to-custom-headphones.jpg?b=1&s=170667a&w=0&k=20&c=iE2Fs5U-gewaPtJJRpz3Wb3dH6o86iB7mKhTWTJN3hc=">
