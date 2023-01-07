@@ -37,7 +37,7 @@ body{
     /* background-color: #121212; */
 }
 #Footer-Container{
-    /* background-color: rgb(40, 40, 37); */
+    background-color: rgb(40, 40, 37);
     position: fixed;
     bottom: 0;
     height: 80px;
