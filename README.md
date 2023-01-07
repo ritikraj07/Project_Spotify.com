@@ -25,10 +25,15 @@ We have been given the task to clone the Spotify website in 1 week at the end of
 
  1) Dilasa Thapa has created the Landing page and profile page of Spotify Website.
 Here is how page looks :-
+<img src="https://snipboard.io/qkcbzK.jpg"/>
 
 
 
 profile page :-
+<img src="https://snipboard.io/5wDcdR.jpg"/>
+<img src="https://snipboard.io/ni81Lt.jpg"/>
+<img src="https://snipboard.io/5G4nfO.jpg"/>
+<img src="https://snipboard.io/2sYj5q.jpg"/>
 
 
 
@@ -36,6 +41,7 @@ profile page :-
  When you want to go on Home Page it will show the pop up like you have to login first
 
  Here is how  page looks :-
+<img src="https://snipboard.io/sIzAMu.jpg"/>
 
 
 
@@ -51,10 +57,12 @@ profile page :-
 For that click on the SignIn/Up button of the navbar.
 
 Here is how SignUp page looks :- 
+<img src="https://snipboard.io/n1EVK5.jpg"/>
 
 
 
 This is how Login Page looks like :-
+<img src="https://snipboard.io/sIzAMu.jpg"/>
 
 
 
@@ -66,6 +74,7 @@ After Successful Login It will redirect to home page and show user name at the t
 3) Now Comes the Home Page, Amit Sisodiya has created  the home page and side navbar of Spotify Website.
 
 Here is how Home page looks :- 
+<img src="https://snipboard.io/nrUEQp.jpg"/>
 
 
 
@@ -78,6 +87,7 @@ Here in Side Navbar having some pages link like Home, Searchbar,Library and play
 4) Now we come to the Searchbar page, Ritik raj has created  this page of Spotify Website.
 
 Here is how Searchbar page looks :- 
+<img src="https://snipboard.io/hlRbQL.jpg"/>
 
 
 Now if we we are searching any song by Mike or Typing, the result will be display and we can play any song
@@ -88,11 +98,13 @@ Here is how Searchbar page looks after data searching :-
 
 
 
+
 5) Now we come to the Playlist page which created by the Aman Ninave 
 
 in this page we are geting the data in an albumb according to the song category
 
 Here is how playlist page looks :- 
+<img src="https://snipboard.io/TzksOl.jpg"/>
 
 
 
@@ -104,3 +116,5 @@ in this section we can see the Audio player if we are plaing any song it's playe
 There are have many features like play, pause, forword, backword etc.
 
 Here is how Player section looks :- 
+<img src="https://snipboard.io/N4kIqe.jpg"/>
+
