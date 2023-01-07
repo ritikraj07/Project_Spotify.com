@@ -203,7 +203,6 @@ hr{
   .playlist_tab:hover button {
     fill: black;
     background-color: #1ed760;
-    /* bottom: 4px; */
     transform: translateY(-10px);
     visibility: visible;
   }
