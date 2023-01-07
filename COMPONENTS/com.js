@@ -17,7 +17,7 @@ function lets_do_resize() {
             if (cw < 400 && cw > 200) {
                 sidebar.style.width = `${cw}px`;
                 let width = screen.width;
-                document.getElementById("Nav-Bar-Container").style.width = `${width-cw-50}px`
+                document.getElementById("Nav-Bar-Container").style.width = `${width-cw}px`
                 document.getElementById("right_top_container").style.marginLeft = `${cw}px`
             }
         }

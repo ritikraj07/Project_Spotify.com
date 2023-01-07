@@ -1,46 +1,45 @@
 
-
 import { getCategoryPlaylists } from "../UTILITY/api_call.js";
 let t = localStorage.getItem('spotify_token')
 
 
 window.addEventListener("load", async function(){
-    let gotData = await getCategoryPlaylists("sleep", "15", "6", t);
+    let gotData = await getCategoryPlaylists("sleep", "15", "5", t);
     var id = document.getElementById("f-show");
     
-    console.log(id);
+    // console.log(id);
     ar.push(gotData);
-    console.log("ar", ar)
+    // console.log("ar", ar)
     displaydata(ar, id);
 });
 window.addEventListener("load", async function(){
-    let gotData = await getCategoryPlaylists("focus", "7", "6", t);
+    let gotData = await getCategoryPlaylists("focus", "7", "5", t);
     // console.log("ch")
     var id = document.getElementById("p-show");
     
-    console.log(id);
+    // console.log(id);
     ar1.push(gotData);
-    console.log("ar", ar)
+    // console.log("ar", ar)
     displaydata(ar1, id);
 });
 window.addEventListener("load", async function(){
-    let gotData = await getCategoryPlaylists("pop", "8", "6", t);
-    console.log("chechhjkldld")
+    let gotData = await getCategoryPlaylists("pop", "8", "5", t);
+    // console.log("chechhjkldld")
     var id = document.getElementById("m-show");
     
-    console.log("m-show", id);
+    // console.log("m-show", id);
     ar2.push(gotData);
-    console.log("ar", ar)
+    // console.log("ar", ar)
     displaydata(ar2, id);
 });
 window.addEventListener("load", async function(){
-    let gotData = await getCategoryPlaylists("gaming", "8", "6", t);
-    console.log("chechhjkldld")
+    let gotData = await getCategoryPlaylists("gaming", "5", "5", t);
+    // console.log("chechhjkldld")
     var id = document.getElementById("b-show");
     
-    console.log("m-show", id);
+    // console.log("m-show", id);
     ar4.push(gotData);
-    console.log("ar", ar)
+    // console.log("ar", ar)
     displaydata(ar4, id);
 });
 
@@ -52,9 +51,9 @@ var ar4 = [];
 
 let displaydata = (data, id) =>{
     let container = id;
-    console.log(id);
+    // console.log(id);
     data.forEach((ele) => {
-     console.log("eke", ele);
+    //  console.log("eke", ele);
      for(var i of ele){
         let cdiv = document.createElement("div");
         cdiv.setAttribute("id", "ccdiv");        
@@ -74,7 +73,9 @@ let displaydata = (data, id) =>{
         let desdiv = document.createElement("div");
         let des = document.createElement("p");
         desdiv.setAttribute("class", "des")
-        des.textContent = i.description;
+        var dex = song_name(i.description)
+        des.textContent = dex;
+        
         desdiv.append(des);
 
         let btndiv = document.createElement("div");
@@ -106,15 +107,15 @@ let displaydata = (data, id) =>{
 function showloginPage(data){
     document.getElementById("show-login-page").style.width = "100%";
 
-    console.log(data);
+    // console.log(data);
     let image = document.getElementById("page-img");
     image.textContent = "";
     // data.map((ele) => {
         let appendedimg = document.createElement("img");
         appendedimg.src = data.images[0].url;
         appendedimg.setAttribute("class", "appendedimg");
-        console.log("chjcjcf");
-        console.log("named", data.name)
+        // console.log("chjcjcf");
+        // console.log("named", data.name)
         image.append(appendedimg);
     // /})
 }
@@ -127,3 +128,16 @@ function closepage(){
 }
 
 
+function song_name(data){
+    let name =  data.split(" ")
+    
+    let sname =''
+    for(var i = 0; i<name.length && i<4; i++){
+      sname += name[i]+" "
+    }
+    if(name.length>3){
+      return sname +"..."
+    }
+    
+    return sname;
+  }

@@ -55,11 +55,12 @@
     border: 0px solid rgb(81, 4, 17);
 }
 #preview div:nth-child(2) img{
-    width: 50%;
-    height: 340px;
+    width: 55%;
+    height: 350px;
     border: 0px solid green;
     margin-top: 10%;
     margin-left: 20%;
+    cursor: pointer;
 }
 #overview{
     display: flex;
@@ -341,6 +342,7 @@
     width: 50%;
     height: 70px;
     margin-left: 60%;
+    cursor: pointer;
 }
  #account-img {
     height: 50px;
