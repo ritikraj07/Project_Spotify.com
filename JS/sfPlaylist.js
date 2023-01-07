@@ -158,7 +158,7 @@ async function playlistMainBody(Songs_Data) {
     plybtn.id = "pl_top_playbtn"
     // plybtn.addEventListener("click", showLikedPlayList);
     var plyimg = document.createElement("img")
-    plyimg.src = "./../IMAGES/AmanImages/play-button.png";
+    plyimg.src = "./../IMAGES/AmanImages/vinyl.jpg";
     
     plybtn.append(plyimg);
 
