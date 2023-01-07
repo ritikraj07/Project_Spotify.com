@@ -265,6 +265,7 @@ function nav_bar_after_login(){
 <div>
     <div><button class="page_change_btm"><i class="fa-solid fa-greater-than fa-rotate-180"></i></button></div>
     <div><button class="page_change_btm"><i class="fa-solid fa-greater-than "></i></button></div>
+    
     <div id="search_input_div" style="visibility: hidden;">
         <button><i class="fa-solid fa-magnifying-glass"></i></i></button>
         <input id="search_input_itme_song" type="text" placeholder="What do you want to lisiten">

@@ -116,7 +116,6 @@ var mode = localStorage.setItem("mode", JSON.stringify("night"))
 
 var day_night = document.querySelector("#dark")
 day_night.addEventListener("click", function(){
-  console.log("heoijsjkljf")
   day_night_fun()
 })
 
@@ -143,6 +142,6 @@ searchbtm.addEventListener('click', search_fun)
 
 function search_fun(){
   Main_container.innerHTML = search_main_container()
+  document.getElementById("search_input_div").style.visibility = 'visible'
 }
-
 
