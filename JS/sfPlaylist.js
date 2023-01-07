@@ -127,6 +127,8 @@ function StoreLocal() {
 // <<<<<<<<<<<<<<<<<<<<<<<Play List main static body >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 let Songs_Data2 ;
+let userName = JSON.parse( localStorage.getItem("spotify_users") ) ;
+
 
 async function playlistMainBody(Songs_Data) {
     Songs_Data2 = Songs_Data;
@@ -154,10 +156,10 @@ async function playlistMainBody(Songs_Data) {
     var plybtn = document.createElement("div");
     plybtn.classList = "pl_top_playbtn";
     plybtn.id = "pl_top_playbtn"
-    plybtn.addEventListener("click", showLikedPlayList);
+    // plybtn.addEventListener("click", showLikedPlayList);
     var plyimg = document.createElement("img")
     plyimg.src = "./../IMAGES/AmanImages/play-button.png";
-
+    
     plybtn.append(plyimg);
 
     var plthead = document.createElement("div")
@@ -181,9 +183,13 @@ async function playlistMainBody(Songs_Data) {
 
     var usrlgo = document.createElement("img")
     usrlgo.src = "./../IMAGES/AmanImages/user.png";
+    usrlgo.id = "usr_Lgo"
     var usrspn = document.createElement("span")
-    usrspn.textContent = "Aman Ninave";
+    usrspn.textContent = userName[0].profile_name;
     usrdiv.append(usrlgo, usrspn);
+    usrdiv.addEventListener("click" , function () {
+        window.location.href = "./../HTML/account.html"
+    })
     head1div.append(arrowDiv, plybtn, plthead, upgradediv, usrdiv);
 
     var head2div = document.createElement("div")
@@ -217,12 +223,12 @@ async function playlistMainBody(Songs_Data) {
     var btmdes = document.createElement("p");
 
     var spn1 = document.createElement("span");
-    spn1.textContent = "Aman Ninave "
+    spn1.textContent = userName[0].profile_name  ;
 
     var spn2 = document.createElement("span");
     spn2.textContent = Songs_Data.length;
 
-    btmdes.append(spn1, "| ", spn2, " Songs ");
+    btmdes.append(spn1, " | ", spn2, " Songs ");
 
     plshwheading.append(plylist, plynme, plylistdes, btmdes);
 
@@ -338,6 +344,10 @@ function showSongs(sdata) {
                 oldPlay = audioElement;
                 oldindex = index;
 
+                masterPlay.classList.remove('fa-play-circle');
+                masterPlay.classList.add('fa-pause-circle');
+     
+                
                 ChangeSongName (elem);
 
                 oldPlay.addEventListener('timeupdate', () => {
@@ -369,6 +379,9 @@ function showSongs(sdata) {
             } else {
 
                 audioElement.pause();
+                
+                masterPlay.classList.add('fa-play-circle');
+                masterPlay.classList.remove('fa-pause-circle');
             }
 
         })
@@ -534,7 +547,7 @@ function SongController() {
     }
     else {
         oldPlay.pause();
-
+       
         masterPlay.classList.add('fa-play-circle');
         masterPlay.classList.remove('fa-pause-circle');
     }
@@ -580,6 +593,10 @@ let shuffleSong = () => {
     oldPlay.play();
     // console.log(oldindex)
 
+    masterPlay.classList.remove('fa-play-circle');
+    masterPlay.classList.add('fa-pause-circle');
+        
+
     ChangeSongName (Songs_Data2[oldindex]);
 
     oldPlay.addEventListener('timeupdate', () => {
@@ -618,6 +635,10 @@ let previousSong = () => {
     oldPlay.play();
     // console.log(oldindex)
 
+    masterPlay.classList.remove('fa-play-circle');
+    masterPlay.classList.add('fa-pause-circle');
+       
+
     ChangeSongName (Songs_Data2[oldindex]);
 
     oldPlay.addEventListener('timeupdate', () => {
@@ -655,6 +676,9 @@ let nextSong = () => {
     oldPlay.play();
     // console.log(oldindex)
 
+    masterPlay.classList.remove('fa-play-circle');
+    masterPlay.classList.add('fa-pause-circle');
+       
     ChangeSongName (Songs_Data2[oldindex]);
 
     oldPlay.addEventListener('timeupdate', () => {
@@ -685,8 +709,45 @@ function ChangeSongName (elem) {
     localStorage.setItem("box-song" , JSON.stringify(elem));      // Storing to local stroage current song
 }
 
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< showing Liked Songs Play List with top play button  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Adding Liked Songs from botton masterplay  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+let likebtnmasterplay = document.querySelector("#like_btn_MasterPlay_Div");
+let Like_btn_MasterPlay = document.querySelector("#Like_button_MasterPlay");
+
+likebtnmasterplay.addEventListener("click", function () {
+
+    let temp = likedSongs.find((arrVal) => Songs_Data2[oldindex].track.id == arrVal.track.id)
+    if (temp) {
+
+        likedSongs.map(function (filterelem, index) {
+            if (Songs_Data2[oldindex].track.id == filterelem.track.id) {
+
+                likedSongs.splice(index, 1)
+                localStorage.setItem("Liked-Songs", JSON.stringify(likedSongs));
+                Like_btn_MasterPlay.src = "./../IMAGES/AmanImages/heart.png"
+                // playlistMainBody(Songs_Data2)
+            }
+        })
+
+    } else {
+        likedSongs.push(Songs_Data2[oldindex]);
+        localStorage.setItem("Liked-Songs", JSON.stringify(likedSongs));
+        // playlistMainBody(Songs_Data2)
+         Like_btn_MasterPlay.src = "./../IMAGES/AmanImages/love.png"
+        // showSongs(sdata);
+    }
+
+})
+
+
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< All Navigation Section Side Bar  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+//>>>>>>>>>>>>>>>>>> Like Button >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+document.querySelector("#Liked_Songs_Side_Nav").addEventListener("click", showLikedPlayList);
 
 
 function showLikedPlayList() {
@@ -698,4 +759,35 @@ function showLikedPlayList() {
     playlistMainBody(likedSongs)
 
 }
+
+
+
+
+//>>>>>>>>>>>>>>>>>> Home  Button >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+document.querySelector("#Home_Button_Side_Nav").addEventListener("click", GotoHomePage);
+
+
+function GotoHomePage() {
+    
+    window.location.href = "./../HTML/index.html";
+
+}
+
+
+//>>>>>>>>>>>>>>>>>> Search  Button >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+document.querySelector("#Search_Button_Side_Nav").addEventListener("click", GotoSearchPage);
+
+
+function GotoSearchPage() {
+
+    window.location.href = "./../HTML/index.html";
+
+}
+
+
+
 export { getdata, showSongs }
