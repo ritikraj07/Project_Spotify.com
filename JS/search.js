@@ -13,15 +13,47 @@ import {
   var token = localStorage.getItem("spotify_token")
   function get_song(song){
     search_input_itme_song.value = song
-    getAllSearchResults(song, "track,artist", "50", token).then(function(res){
+    getAllSearchResults(song, "track,artist", "10", token).then(function(res){
         let artist_items_ = res.artists.items
         let track_items_ = res.tracks.items
         // console.log(res)
         // console.log(artist_items_)
+
        console.log(track_items_) //working
         document.getElementById("Main-container").innerHTML = ""
         document.getElementById("Main-container").innerHTML= search_result_div(track_items_)
+      
+   
+      var topseaMusic =  document.getElementById("play_btm_in_top_result")
+      topseaMusic.addEventListener("click", playAudio)
+      var btm1 = document.querySelector("#songbtm1 ")
+      btm1.addEventListener("click", playAudio)
+      var x = document.getElementById("myAudio"); 
+      var songplaybol = false
+    
+      function playAudio() { 
+        if(songplaybol == false){
+          topseaMusic.innerHTML = '<i class="fa-sharp fa-solid fa-pause"></i>'
+          
+          btm1.innerHTML = `<i class="fa-sharp fa-solid fa-pause PlayHideShow "></i> <img src="${track_items_[0].album.images[0].url}" alt=""> `
+          songplaybol = true
+          x.play();
+        }
+        else{
+          topseaMusic.innerHTML = '<i class="fa-sharp fa-solid fa-play "></i>'
+          btm1.innerHTML = `<i class="fa-sharp fa-solid fa-play  PlayHideShow "></i> <img src="${track_items_[0].album.images[0].url}" alt="">`
+          songplaybol = false
+          x.pause(); 
+        }
+      } 
 
+    
+      
+
+
+
+
+      
       },function(e){
         console.log("you are getting following error", e)
       })
@@ -64,6 +96,3 @@ import {
   micbtm.addEventListener('click', Mic_search)
   
  
-
-  
-

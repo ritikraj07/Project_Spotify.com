@@ -11,6 +11,7 @@ const row_four = document.querySelector('#playlist_four');
 
 var spotify_token = localStorage.getItem("spotify_token")
 let token_timer = localStorage.getItem('token_timer',"time")||0
+  // console.log(spotify_token)
 
   const displayPlaylist = (data, parent) => {
     data.forEach(ele => {
@@ -38,6 +39,16 @@ let token_timer = localStorage.getItem('token_timer',"time")||0
         d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
       </path>
       </svg>`;
+
+      play_btn.addEventListener("click", function () {
+        localStorage.setItem("PlayList-Name", ele.name);
+        localStorage.setItem("playList-Description", ele.description);
+        localStorage.setItem("playList-Id", ele.id);
+        localStorage.setItem("playList-ImageURL", ele.images[0].url)
+      
+        window.location.href = "./../HTML/sfPlaylist.html";
+      })
+
       image_contaier.append(image, play_btn);
     
        playlist_tab.setAttribute('class', 'playlist_tab');
@@ -53,22 +64,28 @@ let token_timer = localStorage.getItem('token_timer',"time")||0
     });
   }
 // console.log(parent)
-  getPlaylists('party','10',spotify_token ).then(function(res){
+  getPlaylists('party','11',spotify_token ).then(function(res){
     // console.log(res)
     displayPlaylist(res, row_one);
   })
 
-  getPlaylists('chill','10',spotify_token ).then(function(res){
+  getPlaylists('chill','11',spotify_token ).then(function(res){
     // console.log(res)
     displayPlaylist(res, row_two);
   })
 
-  getPlaylists('rock','10',spotify_token ).then(function(res){
+  getPlaylists('rock','11',spotify_token ).then(function(res){
     // console.log(res)
     displayPlaylist(res, row_three);
   })
   
-  getPlaylists('dinner','10',spotify_token ).then(function(res){
+  getPlaylists('dinner','11',spotify_token ).then(function(res){
     // console.log(res)
     displayPlaylist(res, row_four);
   })
+
+
+
+
+
+  
