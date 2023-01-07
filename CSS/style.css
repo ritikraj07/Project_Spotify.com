@@ -23,7 +23,7 @@ body{
     margin-left: 300px;
 }
 #Nav-Bar-Container{
-    /* background-color: rgb(233, 233, 233); */
+    background-color: rgb(0, 0, 0);
     position: fixed;
     height: 70px;
     /* width: 1400px; */
@@ -92,15 +92,15 @@ label:before{
     top: 1px;
     border-radius: 50%;
     cursor: pointer;
-    background: black;
+    background: rgb(255, 255, 255);
     transition: 0.4s;
     color: black;
 }
 label.active:before{
     left: 24px;
-    background: rgb(69, 68, 68);
+    background: rgb(0, 0, 0);
 }
 body.night{
-    background: rgb(253, 253, 253);
+    background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
