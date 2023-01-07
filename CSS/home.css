@@ -114,9 +114,7 @@ hr{
   .page_right {
    
     background-color: #00000000;
-    /* width: 98%; */
-    /* height: calc(100vh - 140px); */
-    /* overflow-y: scroll; */
+
     padding: 0 20px;
     display: flex;
     flex-direction: column;
@@ -214,7 +212,7 @@ hr{
     max-width: 100px;
     white-space: normal;
     overflow: hidden;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
     height: 90px;
     line-height: 20px;
   }
@@ -235,7 +233,7 @@ hr{
     color: rgb(129, 123, 123);
   }
   
-  @media ( max-width : 1500px) {
+  @media ( max-width : 400px) {
     .playlist_container {
       grid-template-columns: repeat(5, 1fr);
     }

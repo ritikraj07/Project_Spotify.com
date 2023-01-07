@@ -11,7 +11,6 @@ const row_four = document.querySelector('#playlist_four');
 
 var spotify_token = localStorage.getItem("spotify_token")
 let token_timer = localStorage.getItem('token_timer',"time")||0
-  // console.log(spotify_token)
 
   const displayPlaylist = (data, parent) => {
     data.forEach(ele => {
