@@ -76,6 +76,9 @@ if(login_user =="true"){
   Nav_Bar_Container.innerHTML =  nav_bar_after_login()
   Main_container.innerHTML = main_container_after_login()
   footer_container.innerHTML = footer_after_login()
+
+
+  
   // Nav_Bar_Container.style.position = "static";
 }else{
   Nav_Bar_Container.style.position = "fixed";
@@ -165,6 +168,30 @@ function myFunction() {
 
 document.querySelector("#pages>div:nth-child(3)").addEventListener("click", gotoPlayList)
 function gotoPlayList(){
-  console.log("hello dude")
   window.location.href = "./../HTML/sfPlaylist.html"
+}
+
+
+
+document.querySelector("#pages>div:nth-child(5)").addEventListener("click", gotolikedpage)
+function gotolikedpage(){
+  localStorage.setItem("PlayList-Name", "Liked Songs");
+  localStorage.setItem("playList-Description", "Your Favourite Songs are Here ! ");
+  // playlistMainBody(likedSongs)
+  window.location.href = "./../HTML/sfPlaylist.html"
+}
+
+
+
+
+
+
+if(login_user =="true"){
+
+  var loginsound = document.getElementById("login_sound")
+  playAudiolog()
+  function playAudiolog() { 
+      loginsound.play();
+  } 
+
 }
