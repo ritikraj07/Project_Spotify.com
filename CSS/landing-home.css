@@ -256,8 +256,10 @@
     display: block;
     background-color: black;
     cursor: pointer;
-    margin-left: 50%;
-    margin-top: -3%;
+    margin-left: 37%;
+    margin-top: -8%;
+    border-radius: 5px;
+    padding: 0 20px;
     z-index: 60;
     position: relative;
 }
@@ -330,6 +332,204 @@
     height: 60%;
     font-weight: 700;     
 }
+
+
+
+
+
+@media screen and (max-width:800px) {
+    #f-show {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #p-show {
+        grid-template-columns: repeat(3, 1fr);    
+    }
+    
+    #m-show {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #b-show {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    #b-navbar button:nth-child(1){
+        margin-left: 0;
+    }
+    #b-navbar button:nth-child(2){
+        margin-left: 0;
+    }
+    #b-navbar button:nth-child(3){
+        margin-left: 0;
+    }
+    #b-navbar button:nth-child(4){
+        margin-left: 0;
+        width: 100%;
+    }
+    #b-navbar button:nth-child(5){
+        margin-left: 0;
+        width: 100%;
+    }
+    #b-navbar button:nth-child(6){
+        margin-left: 0;
+        width: 100%;
+    }
+
+}
+
+@media (max-width : 700px) {
+    #f-show {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5%;
+        margin-bottom: 100px;
+    }
+    #f-show img{
+        height:60%;
+    }
+
+    
+    
+    #p-show {
+        grid-template-columns: repeat(2, 1fr);    
+        gap: 5%;
+        margin-bottom: 100px;
+    }
+    #p-show img{
+        height:  60%;
+    }
+    
+    #m-show {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5%;
+        margin-bottom: 100px;
+    }
+    #m-show img{
+        height: 60%;
+    }
+    
+    #b-show {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5%;
+        margin-bottom: 100px;
+    }
+    #b-show img{
+        height: 60%;
+    }
+
+    #b-navbar button:nth-child(1){
+        margin-left: 0;
+    }
+    #b-navbar button:nth-child(2){
+        margin-left: 0;
+    }
+    #b-navbar button:nth-child(3){
+        margin-left: 0;
+    }
+    #b-navbar button:nth-child(4){
+        margin-left: 0;
+        width: 100%;
+    }
+    #b-navbar button:nth-child(5){
+        margin-left: 0;
+        width: 100%;
+    }
+    #b-navbar button:nth-child(6){
+        margin-left: 0;
+        width: 100%;
+    }
+
+}
+
+@media ( max-width : 500px){
+    #f-show {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5%;
+        margin-bottom: 300px;
+        padding: 0 50px;
+    }
+    #f-show img{
+        height:60%;
+    }
+    
+    #p-show {
+        grid-template-columns: repeat(1, 1fr);    
+        gap: 5%;
+        margin-bottom: 300px;
+        padding: 0 50px;
+    }
+    #p-show img{
+        height:  60%;
+    }
+    
+    #m-show {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5%;
+        margin-bottom: 300px;
+        padding: 0 50px;
+    }
+    #m-show img{
+        height: 60%;
+    }
+    
+    #b-show {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5%;
+        margin-bottom: 300px;
+        padding: 0 50px;
+    }
+    #b-show img{
+        height: 60%;
+    }
+
+
+    #landing-home>div>div:nth-child(1){
+        justify-content: space-around;
+    }
+    #b-navbar{
+        display: flex;
+        /* justify-content: flex-start; */
+        width: 90%;
+        
+    }
+
+    #b-navbar button:nth-child(1){
+        font-weight: 100;
+        font-size: small;
+
+    }
+    #b-navbar button:nth-child(2){
+        /* margin: 0; */
+        font-weight: 100;
+        font-size: small;
+        display: none;
+    }
+    #b-navbar button:nth-child(3){
+        /* margin: 0; */
+        font-weight: 100;
+        font-size: small;
+
+    }
+    #b-navbar button:nth-child(4){
+        margin: 0;
+        font-weight: 100;
+        font-size: small;
+        display: none;
+    }
+    #b-navbar button:nth-child(5){
+        /* margin: 0; */
+        font-weight: 100;
+        font-size: small;
+    }
+    #b-navbar button:nth-child(6){
+        /* margin-left: 0; */
+        /* width: 100%; */
+        font-size: small;
+    }
+}
+
+
 /* @media (max-width : 1000px) {
     #side-bar-container{
         width: 150px;

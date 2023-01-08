@@ -37,6 +37,7 @@ main {
     position: fixed;
     top: 0;
     left: 0;
+    border-right: 2px solid #008000;
 }
 
 #pl_main_div {
@@ -676,6 +677,23 @@ hr {
     margin-bottom: 0;
     color: rgb(129, 123, 123);
 }
+.volume-slider-con {
+    height: 4px;
+    width: 86px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+}
+.volume-slider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: rgb(9, 227, 42);
+    border-radius: 100px;
+}
+.slider-container{
+    margin-top: 7px;
+}
 
 @media (max-width : 1500px) {
     .playlist_container {
@@ -734,3 +752,4 @@ hr {
         display: none;
     }
 }
+

@@ -95,7 +95,7 @@ async function getdata() {
     // let id = "37i9dQZF1DWVDCraF986xg";
     // localStorage.setItem("playList-Id", id);
 
-     let id = localStorage.getItem("playList-Id");
+    let  id = localStorage.getItem("playList-Id");
     var trackdata = await getTrack(id, spotify_token);
 
     console.log(trackdata.items);
@@ -186,10 +186,19 @@ async function playlistMainBody(Songs_Data) {
     usrlgo.id = "usr_Lgo"
     var usrspn = document.createElement("span")
     usrspn.textContent = userName[0].profile_name;
-    usrdiv.append(usrlgo, usrspn);
+
+    let userTickTop = document.createElement("i");
+    userTickTop.classList = "fa-sharp fa-solid fa-circle-chevron-down";
+
+    // <i class="fa-sharp fa-solid fa-circle-chevron-down"></i>
+
+    usrdiv.append(usrlgo, usrspn , userTickTop );
     usrdiv.addEventListener("click" , function () {
         window.location.href = "./../HTML/account.html"
     })
+
+    
+
     head1div.append(arrowDiv, plybtn, plthead, upgradediv, usrdiv);
 
     var head2div = document.createElement("div")
@@ -788,6 +797,63 @@ function GotoSearchPage() {
 
 }
 
+//<<<<<<<<<<<<<<<<<<<<<<<<<< Volume bar >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+let e = document.querySelector('.volume-slider-con');
+let eInner = document.querySelector('.volume-slider');
+let VolumeBarAudio;
+// VolumeBarAudio.src = 
+// console.log(Songs_Data2);
+// console.log(oldindex);
+// VolumeBarAudio.src = getUrl();
+// "https://p.scdn.co/mp3-preview/1c6fa6c8daf00880545556415d8f1314be7fd8c0?cid=5fae4890a7f244b29c841946eaba7a8d";
+// oldPlay.src = Songs_Data2[oldindex].track.preview_url;
+
+// console.log(VolumeBarAudio);
+let drag = false;
+e.addEventListener('mousedown',function(ev){
+    VolumeBarAudio = oldPlay;
+    // console.log("test");
+   drag = true;
+   updateBar(ev.clientX);
+});
+e.addEventListener('mousemove',function(ev){
+    // console.log("test");
+    VolumeBarAudio = oldPlay;
+   if(drag){
+      updateBar(ev.clientX);
+   }
+});
+e.addEventListener('mouseup',function(ev){
+    console.log("test");
+    VolumeBarAudio = oldPlay;
+ drag = false;
+});
+var updateBar = function (x, vol) {
+   var volume = e;
+        var percentage;
+        //if only volume have specificed
+        //then direct update volume
+        if (vol) {
+            percentage = vol * 100;
+        } else {
+            var position = x - volume.offsetLeft;
+            percentage = 100 * position / volume.clientWidth;
+        }
+
+        if (percentage > 100) {
+            percentage = 100;
+        }
+        if (percentage < 0) {
+            percentage = 0;
+        }
+
+        //update volume bar and video volume
+        eInner.style.width = percentage +'%';
+        // console.log(VolumeBarAudio);
+        // console.log(VolumeBarAudio.volume);
+        VolumeBarAudio.volume = percentage / 100;
+};
 
 
 export { getdata, showSongs }

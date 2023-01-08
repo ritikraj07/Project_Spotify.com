@@ -163,3 +163,8 @@ function myFunction() {
 }
 
 
+document.querySelector("#pages>div:nth-child(3)").addEventListener("click", gotoPlayList)
+function gotoPlayList(){
+  console.log("hello dude")
+  window.location.href = "./../HTML/sfPlaylist.html"
+}
