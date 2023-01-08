@@ -29,7 +29,3 @@ let g = document.getElementById("#name");
 g.textContent = "";
 g.textContent = ug;
 
-
-
-
-
