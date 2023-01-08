@@ -184,10 +184,10 @@ function gotolikedpage(){
 
 
 
+let logintime = JSON.parse(localStorage.getItem("lt"))
 
-
-if(login_user =="true"){
-
+if(login_user =="true" && logintime == "0"){
+  localStorage.setItem("lt", "1")
   var loginsound = document.getElementById("login_sound")
   playAudiolog()
   function playAudiolog() { 
