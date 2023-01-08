@@ -30,9 +30,11 @@ g.textContent = "";
 g.textContent = ug;
 
 
+
 document.querySelector("#data > div:nth-child(8) button").addEventListener("click", gotologinpage)
 
 function gotologinpage(){
     localStorage.setItem("login_user", false)
     window.location.href = "./../HTML/login.html"
 }
+
