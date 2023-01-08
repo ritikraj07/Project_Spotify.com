@@ -50,6 +50,7 @@
 #f-show {
     display: grid;
     width: 100%;
+    /* height: 400px; */
     grid-template-columns: repeat(5, 1fr);
     gap: 2%;
 
@@ -58,6 +59,7 @@
 #p-show {
     display: grid;
     width: 100%;
+    
     grid-template-columns: repeat(5, 1fr);
     gap: 2%;
 
@@ -81,7 +83,7 @@
 /* js starts here */
 #ccdiv {
     border: 0px solid white;
-    height: 260px;
+    height: 300px;
     background-color: #161616d0;
     padding: 5px;
     padding-bottom: -15px;
@@ -96,14 +98,17 @@
 }
 
 .lpimage {
-    padding-top: -5%;
+    padding-top: -2%;
+    border: 0px solid green;
+    height: 160px;
     background-color: yellow;
+    border-radius: 5px;
 }
 
 .lptitle {
     border: 0px solid red;
-    height: 38px;
-    margin-top: -15px;
+    height: 45px;
+    margin-top: -10px;
     margin-bottom: -10px;
     padding-left: 5px;
 }
@@ -113,7 +118,7 @@
     display: flex;
     flex-wrap: wrap;
     border: 0px solid skyblue;
-    padding-top: -20px;
+    padding-top: 10px;
     font-size: small;
     padding-left: 3px;
     height: 55px;
@@ -157,12 +162,13 @@
 }
 
 #ccdiv:hover {
-    box-shadow: rgba(48, 45, 45, 0.25) 0px 54px 55px,
-     rgba(48, 45, 45, 0.12) 0px -12px 30px, 
+    box-shadow: rgba(79, 74, 74, 0.25) 0px 54px 55px,
+     rgba(71, 68, 68, 0.12) 0px -12px 30px, 
     rgba(59, 56, 56, 0.12) 0px 4px 6px,
      rgba(69, 65, 65, 0.17) 0px 12px 13px,
       rgba(51, 48, 48, 0.09) 0px -3px 5px;
       /* background-color: rgb(37, 37, 37); */
+      background-color: rgb(31, 29, 29);
 }
 
 #show-login-page {
@@ -250,7 +256,7 @@
     background-color: black;
     cursor: pointer;
     margin-left: 50%;
-    margin-top: -8%;
+    margin-top: -3%;
     z-index: 60;
     position: relative;
 }
