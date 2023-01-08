@@ -95,7 +95,7 @@ async function getdata() {
     // let id = "37i9dQZF1DWVDCraF986xg";
     // localStorage.setItem("playList-Id", id);
 
-     let id = localStorage.getItem("playList-Id");
+    let  id = localStorage.getItem("playList-Id");
     var trackdata = await getTrack(id, spotify_token);
 
     console.log(trackdata.items);
