@@ -35,12 +35,16 @@ https://starlit-salmiakki-6e2eb0.netlify.app/html/
 <br>
 
 <h3>1) Dilasa Thapa has created the Landing page and profile page of Spotify Website.</h3>
-<h3>Here is how page looks</h3> :-
+<h3>Here is how page looks:-</h3>
+<br>
+<br>
 <img src="https://snipboard.io/qkcbzK.jpg"/>
 
 
 
 <h3> => profile page :-</h3>
+<br>
+<br>
 <img src="https://snipboard.io/5wDcdR.jpg"/>
 <img src="https://snipboard.io/ni81Lt.jpg"/>
 <img src="https://snipboard.io/5G4nfO.jpg"/>
@@ -52,6 +56,8 @@ https://starlit-salmiakki-6e2eb0.netlify.app/html/
  <h3>=> When you want to go on to Home Page, it will show the pop up like you have to login first</h3>
 
  <h3>=> Here is how that page looks:-</h3>
+ <br>
+ <br>
 <img src="https://snipboard.io/sIzAMu.jpg"/>
 
 
@@ -68,11 +74,15 @@ https://starlit-salmiakki-6e2eb0.netlify.app/html/
 <h3>=> For that click on the SignIn/Up button of the navbar.</h3>
 
 <h3>=> Here is how SignUp page looks :- </h3>
+<br>
+<br>
 <img src="https://snipboard.io/n1EVK5.jpg"/>
 
 
 
 <h3>=> This is how Login Page looks like :-</h3>
+<br>
+<br>
 <img src="https://snipboard.io/sIzAMu.jpg"/>
 
 
@@ -85,6 +95,8 @@ https://starlit-salmiakki-6e2eb0.netlify.app/html/
 <h3>3) Now comes the Home Page, Amit Sisodiya has created  the home page and side navbar of Spotify Website.</h3>
 
 <h3>=> Here is how Home page looks :-</h3> 
+<br>
+<br>
 <img src="https://snipboard.io/nrUEQp.jpg"/>
 
 
@@ -98,13 +110,17 @@ https://starlit-salmiakki-6e2eb0.netlify.app/html/
 <h3>4) Now we come to the Searchbar page, Ritik raj has created  this page of Spotify Website.</h3>
 
 <h3>=> Here is how Searchbar page looks :- </h3>
-<img src="https://snipboard.io/hlRbQL.jpg"/>
+<br>
+<br>
+<img src="https://snipboard.io/3IT7va.jpg"/>
 
 
 <h3>=> Now, if we we are searching any song by using voice search mic or typing, the result will be displayed and we can play the searched song</h3>
 
 <h3>=> Here is how Searchbar page looks after data searching :-</h3>
-
+<br>
+<br>
+<img src="https://snipboard.io/Cv3RyB.jpg"/>
 
 
 
@@ -115,6 +131,8 @@ https://starlit-salmiakki-6e2eb0.netlify.app/html/
 <h3>=> In this page we are geting the data from a selected playlist from the many playlists available on the spotify website</h3>
 
 <h3>=> Here is how playlist page looks :- </h3>
+<br>
+<br>
 <img src="https://snipboard.io/TzksOl.jpg"/>
 
 
@@ -127,5 +145,7 @@ https://starlit-salmiakki-6e2eb0.netlify.app/html/
 It has many features including play, pause, next song, previous song, shuffle, loop, like and dislike.</h3>
 
 <h3>=> Here is how Player section looks :- </h3>
+<br>
+<br>
 <img src="https://snipboard.io/N4kIqe.jpg"/>
 
