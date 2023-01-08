@@ -22,7 +22,7 @@ let verify=()=>{
         localStorage.setItem("login_user", true) 
         setTimeout(function(){
             location.href = "../HTML/index.html";
-        },3000)
+        },1000)
         
         // location.href = "index.html";
     } else if (usernotallowed) {

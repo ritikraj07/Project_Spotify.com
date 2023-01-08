@@ -296,3 +296,14 @@ body {
     display: inline;
     /* border: 1px solid white; */
 }
+
+div#player-box{
+    background-color: black;
+}
+
+.song_actions_container{
+    background-color: black;
+}
+.song_actions_container > div{
+    background-color: black;
+}

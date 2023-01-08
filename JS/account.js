@@ -7,7 +7,3 @@ var userdata = JSON.parse(localStorage.getItem("spotify_users"))
 
 userdata = userdata[0]
 
-
-
-
-
