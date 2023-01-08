@@ -12,14 +12,34 @@ function lets_do_resize() {
             document.addEventListener("mouseup", resize_mouse_up_Handler);
         }
         function resize_mouse_move_Handler(e) {
+            var homPlayListDiv = document.getElementById("playlist_one")
             var dx = e.clientX - x;
             var cw = w + dx;
-            if (cw < 400 && cw > 260) {
+            if (cw < 500 && cw > 260) {
                 sidebar.style.width = `${cw}px`;
                 let width = screen.width;
                 document.getElementById("Nav-Bar-Container").style.width = `${width-cw}px`
                 document.getElementById("right_top_container").style.marginLeft = `${cw}px`
+                
             }
+            if(cw > 300 && cw < 400 ){
+                if(homPlayListDiv!=null){
+                    homPlayListDiv.classList.remove("reSizeGrid1")
+                    homPlayListDiv.classList.add("reSizeGrid")
+                }
+            }
+            else if(cw> 400 && cw < 450){
+                if(homPlayListDiv!=null){
+                    homPlayListDiv.classList.remove("reSizeGrid")
+                    homPlayListDiv.classList.add("reSizeGrid1")
+                }
+            }else if(cw<280){
+                if(homPlayListDiv!=null){
+                    homPlayListDiv.classList.remove("reSizeGrid1")
+                    homPlayListDiv.classList.remove("reSizeGrid")
+                }
+            }
+            
         }
         function resize_mouse_up_Handler() {
             document.removeEventListener("mouseup", resize_mouse_up_Handler);
