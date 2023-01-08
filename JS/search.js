@@ -16,7 +16,7 @@ import {
     getAllSearchResults(song, "track,artist", "10", token).then(function(res){
         let artist_items_ = res.artists.items
         let track_items_ = res.tracks.items
-        // console.log(res)
+        console.log(artist_items_)
         // console.log(artist_items_)
 
        console.log(track_items_) //working
@@ -61,7 +61,10 @@ import {
  
 
   let search_input_itme_song = document.getElementById("search_input_itme_song")
-  search_input_itme_song.addEventListener("input", debounce_for_search)
+  if(search_input_itme_song!=null){
+    search_input_itme_song.addEventListener("input", debounce_for_search)
+  }
+  
 
   function display(){
     const sea_value = search_input_itme_song.value
@@ -93,6 +96,9 @@ import {
   }
 
   var micbtm = document.getElementById("mic_btm")
-  micbtm.addEventListener('click', Mic_search)
+  if(micbtm!=null){
+    micbtm.addEventListener('click', Mic_search)
+  }
+
   
  
