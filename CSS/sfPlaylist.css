@@ -56,7 +56,7 @@ main {
 }
 
 #pl_top_heading1 {
-    /* border: 1px solid; */
+    border-left: 2px solid green;
     width: 100%;
     height: 65px;
     background-color: #4D1310;

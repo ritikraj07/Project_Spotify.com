@@ -66,6 +66,24 @@
   cursor: pointer;
 }
 
+#pages div:hover i{
+  color: white;
+  cursor: pointer;
+}
+
+#pages> div .fa-heart{
+  background-color: #3b19a9;
+  padding: 2px;
+  margin-left: -3px;
+  border-radius: 4px;
+  
+}
+#pages> div:hover  .fa-heart{
+  color: rgb(216, 42, 42);
+  background-color:  #3f15c9;
+}
+
+
 #pages :hover {
   color: white;
   cursor: pointer;
@@ -287,3 +305,11 @@ hr{
     }
   }
   
+
+
+  .reSizeGrid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .reSizeGrid1{
+    grid-template-columns: repeat(3, 1fr);
+  }

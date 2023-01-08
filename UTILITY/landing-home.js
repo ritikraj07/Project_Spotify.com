@@ -95,7 +95,7 @@ let displaydata = (data, id) =>{
         
         cdiv.append(img, namediv, desdiv, btndiv);
         
-       
+       if(container==null)return
         container.append(cdiv);
      }
        
@@ -121,7 +121,10 @@ function showloginPage(data){
 }
 
 
-document.getElementById("close").addEventListener("click", closepage);
+let c1 = document.getElementById("close")
+if(c1!=null){
+    c1.addEventListener("click", closepage);
+}
 function closepage(){
     document.getElementById("show-login-page").style.width = "0%";
 

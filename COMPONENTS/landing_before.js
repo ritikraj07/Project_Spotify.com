@@ -277,7 +277,7 @@ function nav_bar_after_login(){
 </div>
 <div class="xyz" id="upgrade" style="border:1px solid white; border-radius:20px; 
 width:12%; padding:2px 15px 2px 10px ;  
-cursor:pointer; background:black;">
+cursor:pointer; background:black; overflow:hidden;">
 <p style="margin:4px; color:white;" >UPGRADE</p>
 </div>
 

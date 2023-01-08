@@ -803,7 +803,7 @@ return `<div id="search_navbar">
 </div>
 <div id="profile_in_search_page">
     <button><i class="fa-regular fa-user"></i></button>
-    <span id="profile_name"> Ritik Raj</span>
+    <span id="profile_name"> Ritik</span>
    
     <button><i class="fa-sharp fa-solid fa-circle-chevron-down"></i></button>
     

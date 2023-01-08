@@ -59,7 +59,10 @@ let token_timer = localStorage.getItem('token_timer',"time")||0
   
       playlist_tab.append(image_contaier, desc_container);
       // console.log(parent)
-      parent.append(playlist_tab);
+      if(parent!=null){
+        parent.append(playlist_tab);
+      }
+      
       
     });
   }

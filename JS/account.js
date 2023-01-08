@@ -35,6 +35,7 @@ document.querySelector("#data > div:nth-child(8) button").addEventListener("clic
 
 function gotologinpage(){
     localStorage.setItem("login_user", false)
+    localStorage.setItem("lt", JSON.stringify("0"))
     window.location.href = "./../HTML/login.html"
 }
 

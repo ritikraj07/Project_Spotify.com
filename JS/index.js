@@ -85,7 +85,10 @@ if(login_user =="true"){
 }
 
 
-document.querySelector("#profile_in_search_page").addEventListener("click", account_page)
+var name9 = document.querySelector("#profile_in_search_page")
+if(name9!=null){
+  name9.addEventListener("click", account_page)
+}
 function account_page(){
   window.location.href = "./../HTML/account.html"
 }
@@ -96,7 +99,10 @@ var users = JSON.parse(localStorage.getItem("spotify_users"))
 
 var user_name = users[0].profile_name
 var p_name = document.querySelector("#profile_name")
-document.querySelector("#profile_name").textContent = user_name
+if(p_name!=null){
+  document.querySelector("#profile_name").textContent = user_name
+}
+
 
 
 
@@ -184,10 +190,10 @@ function gotolikedpage(){
 
 
 
+let logintime = JSON.parse(localStorage.getItem("lt"))
 
-
-if(login_user =="true"){
-
+if(login_user =="true" && logintime == "0"){
+  localStorage.setItem("lt", "1")
   var loginsound = document.getElementById("login_sound")
   playAudiolog()
   function playAudiolog() { 
@@ -195,3 +201,4 @@ if(login_user =="true"){
   } 
 
 }
+

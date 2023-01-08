@@ -82,7 +82,7 @@
 
 /* js starts here */
 #ccdiv {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     height: 300px;
     background-color: #161616d0;
     padding: 5px;
