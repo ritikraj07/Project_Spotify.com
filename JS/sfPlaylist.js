@@ -186,10 +186,19 @@ async function playlistMainBody(Songs_Data) {
     usrlgo.id = "usr_Lgo"
     var usrspn = document.createElement("span")
     usrspn.textContent = userName[0].profile_name;
-    usrdiv.append(usrlgo, usrspn);
+
+    let userTickTop = document.createElement("i");
+    userTickTop.classList = "fa-sharp fa-solid fa-circle-chevron-down";
+
+    // <i class="fa-sharp fa-solid fa-circle-chevron-down"></i>
+
+    usrdiv.append(usrlgo, usrspn , userTickTop );
     usrdiv.addEventListener("click" , function () {
         window.location.href = "./../HTML/account.html"
     })
+
+    
+
     head1div.append(arrowDiv, plybtn, plthead, upgradediv, usrdiv);
 
     var head2div = document.createElement("div")
