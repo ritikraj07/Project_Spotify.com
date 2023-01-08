@@ -272,8 +272,11 @@ async function playlistMainBody(Songs_Data) {
     var plsonglist = document.createElement("div")
     plsonglist.id = "pl_songs_list";
 
-    let songsdata = showSongs(Songs_Data);
-    plsonglist.append(songsdata)
+    if(Songs_Data.length != 0 ){
+        let songsdata = showSongs(Songs_Data);
+        plsonglist.append(songsdata)
+    }
+    
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> changing images of playlist header <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -300,7 +303,7 @@ async function playlistMainBody(Songs_Data) {
     plrecomendedsonglst.id = "pl_recomended_songs_list";
 
     // ODiv.append(head1div, head2div, head4div, plsonglist, plfindmore, plrecomendedheading, plrecomendedsonglst);
-    ODiv.append(head1div, head2div, head4div, plsonglist);
+    ODiv.append(head1div, head2div, head4div, plsonglist , plrecomendedsonglst );
 
 
     document.querySelector("#pl_main_div").append(ODiv);
@@ -315,6 +318,7 @@ let playingIndex;
 let audioElement;
 
 function showSongs(sdata) {
+   
     let counteran = 1;
     let stldiv = document.createElement("div");
     // console.log(sdata)
@@ -358,6 +362,7 @@ function showSongs(sdata) {
      
                 
                 ChangeSongName (elem);
+                AddToHistory(elem);
 
                 oldPlay.addEventListener('timeupdate', () => {
                     // console.log('timeupdate');
@@ -601,7 +606,7 @@ let shuffleSong = () => {
     oldPlay.src = Songs_Data2[oldindex].track.preview_url;
     oldPlay.play();
     // console.log(oldindex)
-
+    https://us06web.zoom.us/j/81758616962
     masterPlay.classList.remove('fa-play-circle');
     masterPlay.classList.add('fa-pause-circle');
         
@@ -709,6 +714,8 @@ let nextSong = () => {
 
 function ChangeSongName (elem) {
 
+    AddToHistory(elem);
+
     let imaggeUrl = document.querySelector("#playing_img")
     imaggeUrl.src = elem.track.album.images[0].url ;
     let SongName1 = document.querySelector("#player_song_name")
@@ -754,6 +761,8 @@ likebtnmasterplay.addEventListener("click", function () {
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< All Navigation Section Side Bar  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
+
+
 //>>>>>>>>>>>>>>>>>> Like Button >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 document.querySelector("#Liked_Songs_Side_Nav").addEventListener("click", showLikedPlayList);
@@ -796,6 +805,40 @@ function GotoSearchPage() {
     window.location.href = "./../HTML/index.html";
 
 }
+
+//>>>>>>>>>>>>>>>>>> library Button >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+document.querySelector("#Library_Songs_Side_Nav").addEventListener("click", showLibPlayList);
+var HistorySongs = JSON.parse(localStorage.getItem("History-Song")) || [] ;
+
+
+function showLibPlayList() {
+    // console.log(likedSongs)
+    // location.reload();
+    localStorage.setItem("PlayList-Name", "Favourite Songs");
+    localStorage.setItem("playList-Description", "Your Favourite Songs are Here ! ");
+    //  HistorySongs = JSON.parse(localStorage.getItem("History-Song")) || [] ;
+
+    playlistMainBody(HistorySongs);
+
+}
+
+
+function AddToHistory(elem) {
+
+    let temp = HistorySongs.find((arrVal) => elem.track.id == arrVal.track.id)
+    if (temp) {
+
+
+    } else {
+
+        HistorySongs.push(elem);
+        localStorage.setItem("History-Song", JSON.stringify(HistorySongs));
+    }
+
+}
+
+
 
 //<<<<<<<<<<<<<<<<<<<<<<<<<< Volume bar >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
