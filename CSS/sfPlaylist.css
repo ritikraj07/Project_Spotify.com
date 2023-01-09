@@ -1067,3 +1067,16 @@ hr {
 
 
 } 
+
+
+#pages> div .fa-heart{
+    background-color: #3b19a9;
+    padding: 2px;
+    margin-left: -3px;
+    border-radius: 4px;
+    
+  }
+  #pages> div:hover  .fa-heart{
+    color: rgb(216, 42, 42);
+    background-color:  #3f15c9;
+  }
