@@ -309,7 +309,10 @@ hr{
 
   .reSizeGrid{
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 100px;
   }
   .reSizeGrid1{
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 200px;
+    gap: 2%;
   }
