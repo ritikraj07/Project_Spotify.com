@@ -24,7 +24,7 @@
           <div id="Side-Bar-Container">
             <div id="logo"> 
                <div id="ban"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Spotify-256.png" alt=""></div>
-                <div> <h1>Spotify</h1></div>
+                <div id="SpotifyHeading"> <h1>Spotify</h1></div>
                 <!-- <div><center>
                     <br>
                         <input type="checkbox" id="switch"
@@ -37,14 +37,14 @@
             </div>
             
             <div id="pages">
-                <div id="Home_Button_Side_Nav"> <i class="fa-solid fa-house"></i>Home </div> 
-                <div id="Search_Button_Side_Nav"><i class="fa-solid fa-magnifying-glass"></i> Search</div> 
-                <div id="Library_Songs_Side_Nav"><i class="fa-solid fa-music"></i> Your Library</div>
-                <div><i class="fa-solid fa-plus"></i>Create Playlist</div>
-                <div id="Liked_Songs_Side_Nav"><i class="fa-solid fa-heart"></i>Liked Song</div>
+                <div id="Home_Button_Side_Nav"> <i class="fa-solid fa-house"></i> <span> Home </span>  </div> 
+                <div id="Search_Button_Side_Nav"><i class="fa-solid fa-magnifying-glass"></i> <span> Search </span></div> 
+                <div id="Library_Songs_Side_Nav"><i class="fa-solid fa-music"></i><span> Your Library </span> </div>
+                <div><i class="fa-solid fa-plus"></i><span> Create Playlist</span></div>
+                <div id="Liked_Songs_Side_Nav"><i class="fa-solid fa-heart"></i> <span> Liked Song </span> </div>
             </div>
             <hr>
-             <div id="app"> <p><i class="fa-regular fa-circle-down"></i>install App</p></div>
+             <div id="app"> <p><i class="fa-regular fa-circle-down"></i> <span> install App </span> </p></div>
             <div class="resizer">
             </div>
         </div>
@@ -248,7 +248,7 @@
                       <path d="M11.5 13.614a5.752 5.752 0 000-11.228v1.55a4.252 4.252 0 010 8.127v1.55z"></path>
                     </svg>
                 </div>
-                <div class="slider-container">
+                <div class="slider-container" id="Slider_Container">
                   <!-- <input type="range" min="0" max="100" value="1" id="range" class="slider"> -->
                   <!-- <progress min="0" max="100" value="0"></progress> -->
                   <audio src="" id="current-song-audio" ></audio>

@@ -432,6 +432,8 @@ function showSongs(sdata) {
 
         //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Liked PlayList Functionality <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
+        
+
         if (likedSongs.some((arrVal) => elem.track.id == arrVal.track.id)) {
 
             harimg.src = "./../IMAGES/AmanImages/love.png"
@@ -439,6 +441,7 @@ function showSongs(sdata) {
         } else {
             harimg.src = "./../IMAGES/AmanImages/heart.png"
         }
+    
         div6.addEventListener("click", function () {
 
             let temp = likedSongs.find((arrVal) => elem.track.id == arrVal.track.id)
@@ -460,6 +463,8 @@ function showSongs(sdata) {
                 harimg.src = "./../IMAGES/AmanImages/love.png"
                 // showSongs(sdata);
             }
+
+        
 
         })
 
