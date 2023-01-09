@@ -1,12 +1,12 @@
 
-body {
+/* body { */
     /* font-family: 'Montserrat', sans-serif; */
     /* font-weight: bold; */
     /* background-color: black; */
     /* color: white; */
     /* height: 100vh; */
     /* margin: 0; */
-}
+/* } */
 .player {
     display: flex;
     justify-content: space-between;
@@ -122,6 +122,7 @@ body {
     width: 300px;
     justify-content: flex-end;
     margin-right: 30px;
+    cursor: pointer;
 }
 .slider-container>progress{
     width: 80px;
