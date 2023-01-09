@@ -38,7 +38,7 @@ https://starlit-salmiakki-6e2eb0.netlify.app/html/
 <h3>Here is how page looks:-</h3>
 <br>
 <br>
-<img src="https://snipboard.io/qkcbzK.jpg"/>
+<img src="https://snipboard.io/aokAc2.jpg"/>
 
 
 
