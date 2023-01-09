@@ -34,6 +34,17 @@ https://starlit-salmiakki-6e2eb0.netlify.app/html/
 <br>
 <br>
 
+<-- <h3>API</h3> -->
+
+This is the free of cost spotify API which we are using to fetching data.
+
+      https://api.spotify.com/v1/browse/categories/dinner/playlists?country=IN&offset=5&limit=10
+
+For the Other documentation we can reference of the Spotify for  Developers website.
+
+        https://developer.spotify.com/documentation/web-api/
+<br>
+<br>
 <h3>1) Dilasa Thapa has created the Landing page and profile page of Spotify Website.</h3>
 <h3>Here is how page looks:-</h3>
 <br>
