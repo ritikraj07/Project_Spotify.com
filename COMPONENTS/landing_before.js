@@ -167,8 +167,8 @@ function footer_after_login(){
             <img id="playing_img" src="https://t.scdn.co/images/8a0fabf4d537486e9b5a4623c921f77e.jpeg">
         </div>
         <div class="player_desc_container">
-            <p id="player_song_name">some song</p>
-            <p id="player_artist_name">some artist</p>
+            <p id="player_song_name">Dil ka dariya</p>
+            <p id="player_artist_name">Ritik Singh</p>
         </div>
         <div class="song_actions_container">
             <div>
