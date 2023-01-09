@@ -48,3 +48,9 @@ function on() {
   function off() {
     document.getElementById("login_button").style.display = "none";
   }
+
+  document.getElementById("logo").addEventListener("click", homepage)
+
+  function homepage(){
+    window.location.href="./../HTML/index.html"
+  }
