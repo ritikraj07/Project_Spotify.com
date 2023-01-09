@@ -3,6 +3,8 @@
 <h2>Deployed Link-.</h2>
 
 https://ritikraj07.github.io/Project_Spotify.com/HTML/index.html
+<hr>
+<br>
 https://starlit-salmiakki-6e2eb0.netlify.app/html/
 
 
