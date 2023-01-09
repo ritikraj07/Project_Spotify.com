@@ -300,6 +300,7 @@ body {
 
 div#player-box{
     background-color: black;
+    height: inherit;
 }
 
 .song_actions_container{
