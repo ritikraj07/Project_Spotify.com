@@ -139,3 +139,7 @@ body.night{
 }
 
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}

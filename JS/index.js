@@ -141,9 +141,9 @@ function day_night_fun(){
   }
 }
 
-if(time > 6  && time<18){
-  day_night.click()
-}
+// if(time > 6  && time<18){
+//   day_night.click()
+// }
 
 let homebtm = document.querySelector("#pages div:nth-child(1)")
 let searchbtm = document.querySelector("#pages div:nth-child(2)")
