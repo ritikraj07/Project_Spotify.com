@@ -16,7 +16,7 @@ function main_container_before_login(){
             <h2>Focus</h2>
             <p>SHOW ALL</p>
         </div>
-        <div id="p-show">
+        <div id="p-show" class="gridgst">
             <!-- append data -->
         </div>
     </div>
@@ -25,7 +25,7 @@ function main_container_before_login(){
             <h2>Sleep</h2>
             <p>SHOW ALL</p>
         </div>
-        <div id="f-show">
+        <div id="f-show" class="gridgst">
             <!-- data append -->
         </div>
     </div>
@@ -35,7 +35,7 @@ function main_container_before_login(){
             <h2>Pop</h2>
             <p>SHOW ALL</p>
         </div>
-        <div id="m-show">
+        <div id="m-show" class="gridgst">
             <!-- append data -->
         </div>
     </div>
@@ -44,7 +44,7 @@ function main_container_before_login(){
             <h2>Gaming</h2>
             <p>SHOW ALL</p>
         </div>
-        <div id="b-show">
+        <div id="b-show" class="gridgst">
             <!-- append data -->
         </div>
     </div>

@@ -16,6 +16,11 @@ function lets_do_resize() {
             var homPlayListDiv1 = document.getElementById("playlist_two")
             var homPlayListDiv2 = document.getElementById("playlist_three")
             var homPlayListDiv3 = document.getElementById("playlist_four")
+            var homPlayListDiv4 = document.getElementById("p-show")
+            var homPlayListDiv5 = document.getElementById("f-show")
+            var homPlayListDiv6 = document.getElementById("m-show")
+            var homPlayListDiv7 = document.getElementById("b-show")
+          
 
             var dx = e.clientX - x;
             var cw = w + dx;
@@ -26,7 +31,7 @@ function lets_do_resize() {
                 document.getElementById("right_top_container").style.marginLeft = `${cw}px`
                 
             }
-            if(cw > 300 && cw < 400 ){
+            if(cw > 300 && cw < 370 ){
                 if(homPlayListDiv!=null){
                     homPlayListDiv.classList.remove("reSizeGrid1")
                     homPlayListDiv.classList.add("reSizeGrid")
@@ -37,9 +42,20 @@ function lets_do_resize() {
                     homPlayListDiv3.classList.remove("reSizeGrid1")
                     homPlayListDiv3.classList.add("reSizeGrid")
 
+                 
+                }else if(homPlayListDiv4!=null){
+                    homPlayListDiv4.classList.remove("reSizeGrid1")
+                    homPlayListDiv4.classList.add("reSizeGrid")
+                    homPlayListDiv5.classList.remove("reSizeGrid1")
+                    homPlayListDiv5.classList.add("reSizeGrid")
+                    homPlayListDiv6.classList.remove("reSizeGrid1")
+                    homPlayListDiv6.classList.add("reSizeGrid")
+                    homPlayListDiv7.classList.remove("reSizeGrid1")
+                    homPlayListDiv7.classList.add("reSizeGrid")
                 }
             }
-            else if(cw> 400 && cw < 450){
+            else if(cw> 370 && cw < 450){
+                
                 if(homPlayListDiv!=null){
                     homPlayListDiv.classList.remove("reSizeGrid")
                     homPlayListDiv.classList.add("reSizeGrid1")
@@ -49,7 +65,24 @@ function lets_do_resize() {
                     homPlayListDiv2.classList.add("reSizeGrid1")
                     homPlayListDiv3.classList.remove("reSizeGrid")
                     homPlayListDiv3.classList.add("reSizeGrid1")
+
+
+                }   
+                else if(homPlayListDiv4!=null){
+                    
+                    homPlayListDiv4.classList.remove("reSizeGrid")
+                    homPlayListDiv4.classList.add("reSizeGrid1")
+                    
+                    homPlayListDiv5.classList.remove("reSizeGrid")
+                    homPlayListDiv5.classList.add("reSizeGrid1")
+                    
+                    homPlayListDiv6.classList.remove("reSizeGrid")
+                    homPlayListDiv6.classList.add("reSizeGrid1")
+                    
+                    homPlayListDiv7.classList.remove("reSizeGrid")
+                    homPlayListDiv7.classList.add("reSizeGrid1")
                 }
+                
             }else if(cw<280){
                 if(homPlayListDiv!=null){
                     homPlayListDiv.classList.remove("reSizeGrid1")
@@ -60,6 +93,22 @@ function lets_do_resize() {
                     homPlayListDiv2.classList.remove("reSizeGrid")
                     homPlayListDiv3.classList.remove("reSizeGrid1")
                     homPlayListDiv3.classList.remove("reSizeGrid")
+
+                    
+                }   
+                else if(homPlayListDiv4!=null){
+                   
+                    homPlayListDiv4.classList.remove("reSizeGrid")
+                    homPlayListDiv4.classList.remove("reSizeGrid1")
+                    
+                    homPlayListDiv5.classList.remove("reSizeGrid")
+                    homPlayListDiv5.classList.remove("reSizeGrid1")
+                    
+                    homPlayListDiv6.classList.remove("reSizeGrid")
+                    homPlayListDiv6.classList.remove("reSizeGrid1")
+                    
+                    homPlayListDiv7.classList.remove("reSizeGrid")
+                    homPlayListDiv7.classList.remove("reSizeGrid1")
                 }
             }
             

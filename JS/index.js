@@ -18,6 +18,7 @@ import { main_container_before_login, nav_bar_before_login,
 
 let width = screen.width;
 // document.getElementById("Nav-Bar-Container").style.width = `${width-300}px`
+
 lets_do_resize()
  console.log(width)
 // function for auto change token
@@ -155,6 +156,7 @@ homebtm.addEventListener('click', function(){
 searchbtm.addEventListener('click', search_fun)
 
 function search_fun(){
+  if(login_user!=true)return
   Main_container.innerHTML = search_main_container()
   document.getElementById("search_input_div").style.visibility = 'visible'
   document.getElementById("upgrade").style.visibility = 'hidden'
@@ -178,6 +180,7 @@ function myFunction() {
 
 document.querySelector("#pages>div:nth-child(3)").addEventListener("click", gotoPlayList)
 function gotoPlayList(){
+  if(login_user!=true)return
   window.location.href = "./../HTML/sfPlaylist.html"
 }
 
@@ -185,6 +188,7 @@ function gotoPlayList(){
 
 document.querySelector("#pages>div:nth-child(5)").addEventListener("click", gotolikedpage)
 function gotolikedpage(){
+  if(login_user!=true)return
   localStorage.setItem("PlayList-Name", "Liked Songs");
   localStorage.setItem("playList-Description", "Your Favourite Songs are Here ! ");
   // playlistMainBody(likedSongs)
