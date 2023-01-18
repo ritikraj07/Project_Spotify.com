@@ -3,6 +3,8 @@ import { getCategoryPlaylists } from "../UTILITY/api_call.js";
 let t = localStorage.getItem('spotify_token')
 
 
+
+
 window.addEventListener("load", async function(){
     let gotData = await getCategoryPlaylists("sleep", "15", "5", t);
     var id = document.getElementById("f-show");
