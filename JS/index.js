@@ -156,7 +156,7 @@ homebtm.addEventListener('click', function(){
 searchbtm.addEventListener('click', search_fun)
 
 function search_fun(){
-  if(login_user!=true)return
+  if(login_user!='true')return
   Main_container.innerHTML = search_main_container()
   document.getElementById("search_input_div").style.visibility = 'visible'
   document.getElementById("upgrade").style.visibility = 'hidden'
