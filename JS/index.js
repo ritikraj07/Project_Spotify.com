@@ -163,7 +163,6 @@ function search_fun(){
 }
 
 
-
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("Nav-Bar-Container");
