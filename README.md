@@ -2,6 +2,9 @@
 
 <h2>Deployed Link-.</h2>
 
+https://ritikraj07.github.io/Project_Spotify.com/HTML/index.html
+<hr>
+<br>
 https://starlit-salmiakki-6e2eb0.netlify.app/html/
 
 
@@ -22,7 +25,7 @@ https://starlit-salmiakki-6e2eb0.netlify.app/html/
 
 3) <b>Amit Sisodiya</b> - <b>Home page and navbar</b>
 
-4) <b>Ritik Raj</b> - <b>Search Page.</b>
+4) <b>Ritik Raj</b> - <b>Built the search page and css to different parts of website</b>
 
 5) <b>Vishawjeet Singh</b> - <b>Player box and footer signup.</b>
 
