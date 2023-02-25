@@ -7,8 +7,6 @@ const row_two = document.querySelector('#playlist_two');
 const row_three = document.querySelector('#playlist_three');
 const row_four = document.querySelector('#playlist_four');
 
-// console.log(playlist_one)
-
 var spotify_token = localStorage.getItem("spotify_token")
 let token_timer = localStorage.getItem('token_timer',"time")||0
   // console.log(spotify_token)
