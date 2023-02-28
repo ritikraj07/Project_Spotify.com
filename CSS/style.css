@@ -26,7 +26,7 @@ body{
 #Nav-Bar-Container{
     background-color: rgb(0, 0, 0);
     /* position: fixed; */
-    height: 65px;
+    /* height: 65px; */
     width: 76%;
     z-index: 10;
  
