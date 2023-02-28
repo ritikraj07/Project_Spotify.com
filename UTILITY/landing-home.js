@@ -15,7 +15,7 @@ window.addEventListener("load", async function(){
     displaydata(ar, id);
 });
 window.addEventListener("load", async function(){
-    let gotData = await getCategoryPlaylists("focus", "7", "5", t);
+    let gotData = await getCategoryPlaylists("focus", "10", "5", t);
     // console.log("ch")
     var id = document.getElementById("p-show");
     
