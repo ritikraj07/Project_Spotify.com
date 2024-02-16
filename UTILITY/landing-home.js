@@ -1,6 +1,7 @@
 
 import { getCategoryPlaylists } from "../UTILITY/api_call.js";
 let t = localStorage.getItem('spotify_token')
+// import play_btn from "./../IMAGES/icon/play-button-green-icon.png"
 
 
 
@@ -82,8 +83,13 @@ let displaydata = (data, id) =>{
 
         let btndiv = document.createElement("div");
         btndiv.setAttribute("class", "btn");
-        let button = document.createElement("img");
-        button.setAttribute("src", "https://pbs.twimg.com/profile_images/783963645243953154/77g-Wc3h_400x400.jpg");
+        let button = document.createElement("button");
+        // button.setAttribute("src", "https://pbs.twimg.com/profile_images/783963645243953154/77g-Wc3h_400x400.jpg");
+        button.innerHTML = `<svg role="img" height="24" width="24"  aria-hidden="true" viewBox="0 0 24 24">
+        <path fill="#000"
+          d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
+        </path>
+        </svg>`;
         button.setAttribute("class", "play");
         button.addEventListener("click", function(){
             showloginPage(i);
